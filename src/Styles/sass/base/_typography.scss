@@ -1,0 +1,17 @@
+.color {
+  &--2 {
+    color: var(--text-secondary);
+  }
+
+  &--4 {
+    color: var(--text-fourth);
+  }
+
+  &--5 {
+    color: var(--text-fifth);
+  }
+
+  &--6 {
+    color: var(--text-sixth);
+  }
+}
