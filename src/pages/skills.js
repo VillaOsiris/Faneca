@@ -1,6 +1,26 @@
 import { GiRetroController, GiSittingDog, GiMusicSpell } from "react-icons/gi";
 import { BiFootball, BiDrink, BiDownload } from "react-icons/bi";
 import { IoCarSportSharp } from "react-icons/io5";
+import AdobeLogo from "../assets/logos/adobe.svg";
+import BootstrapLogo from "../assets/logos/bootstrap.svg";
+import cssLogo from "../assets/logos/css.svg";
+import dockerLogo from "../assets/logos/docker.svg";
+import figmaLogo from "../assets/logos/figma.svg";
+import gitLogo from "../assets/logos/git.svg";
+import htmlLogo from "../assets/logos/html.svg";
+import jsLogo from "../assets/logos/javascript.svg";
+import nodeLogo from "../assets/logos/nodejs.svg";
+import npmLogo from "../assets/logos/npm.svg";
+import officeLogo from "../assets/logos/office.svg";
+import reactLogo from "../assets/logos/react.svg";
+import sassLogo from "../assets/logos/sass.svg";
+import tsLogo from "../assets/logos/typescript.svg";
+import vsLogo from "../assets/logos/VS_code.svg";
+import BRflag from "../assets/lang/br.png";
+import ENflag from "../assets/lang/usa.png";
+import ESflag from "../assets/lang/es.png";
+import FRflag from "../assets/lang/fr.png";
+import PTflag from "../assets/lang/pt.png";
 
 function Skills() {
   return (
@@ -20,67 +40,39 @@ function Skills() {
         <h3 className="about__grid--title">Skills:</h3>
         <div className="about__grid--icons">
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/html.svg"
-              alt="html logo"
-            />
+            <img className="skill__logo" src={htmlLogo} alt="html logo" />
             <h4>HTML</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/css.svg"
-              alt="css logo"
-            />
+            <img className="skill__logo" src={cssLogo} alt="css logo" />
             <h4>CSS</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/javascript.svg"
-              alt="javascript logo"
-            />
+            <img className="skill__logo" src={jsLogo} alt="javascript logo" />
             <h4>Javascript</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/sass.svg"
-              alt="sass logo"
-            />
+            <img className="skill__logo" src={sassLogo} alt="sass logo" />
             <h4>Sass</h4>
           </figure>
           <figure>
             <img
               className="skill__logo"
-              src="/assets/logos/bootstrap.svg"
+              src={BootstrapLogo}
               alt="bootstrap logo"
             />
             <h4>Bootstrap</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/react.svg"
-              alt="react logo"
-            />
+            <img className="skill__logo" src={reactLogo} alt="react logo" />
             <h4>React</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/typescript.svg"
-              alt="typescript logo"
-            />
+            <img className="skill__logo" src={tsLogo} alt="typescript logo" />
             <h4>Typescript</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/nodejs.svg"
-              alt="nodejs logo"
-            />
+            <img className="skill__logo" src={nodeLogo} alt="nodejs logo" />
             <h4>Nodejs</h4>
           </figure>
         </div>
@@ -89,65 +81,41 @@ function Skills() {
           <figure>
             <img
               className="skill__logo"
-              src="/assets/logos/VS_code.svg"
+              src={vsLogo}
               alt="visual studia code logo"
             />
             <h4>VScode</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/git.svg"
-              alt="git logo"
-            />
+            <img className="skill__logo" src={gitLogo} alt="git logo" />
             <h4>Git</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/docker.svg"
-              alt="docker logo"
-            />
+            <img className="skill__logo" src={dockerLogo} alt="docker logo" />
             <h4>Docker</h4>
           </figure>
           <figure>
             <img
               className="skill__logo"
-              src="/assets/logos/photoshop.svg"
+              src={photoshopLogo}
               alt="photoshop logo"
             />
             <h4>Photoshop</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/adobe.svg"
-              alt="adobe logo"
-            />
+            <img className="skill__logo" src={AdobeLogo} alt="adobe logo" />
             <h4>Adobe</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/office.svg"
-              alt="office logo"
-            />
+            <img className="skill__logo" src={officeLogo} alt="office logo" />
             <h4>Office</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/figma.svg"
-              alt="figma logo"
-            />
+            <img className="skill__logo" src={figmaLogo} alt="figma logo" />
             <h4>Figma</h4>
           </figure>
           <figure>
-            <img
-              className="skill__logo"
-              src="/assets/logos/npm.svg"
-              alt="npm logo"
-            />
+            <img className="skill__logo" src={npmLogo} alt="npm logo" />
             <h4>npm</h4>
           </figure>
         </div>
@@ -157,22 +125,22 @@ function Skills() {
         <div className="about__grid--content">
           <h4 className="color--6">// Native</h4>
           <figure className="languages--icon">
-            <img src="/assets/lang/pt.png" width="25px" alt="" />
+            <img src={PTflag} width="25px" alt="" />
             <p>pt-PT</p>
           </figure>
           <h4 className="color--6">// Fluent</h4>
           <figure className="languages--icon">
-            <img src="/assets/lang/usa.png" width="25px" alt="" />
+            <img src={ENflag} width="25px" alt="" />
             <p>en-US</p>
           </figure>
           <h4 className="color--6">// OKish</h4>
           <figure className="languages--icon">
-            <img src="/assets/lang/es.png" width="25px" alt="" />
+            <img src={ESflag} width="25px" alt="" />
             <p>es-ES</p>
           </figure>
           <h4 className="color--6">// Poor</h4>
           <figure className="languages--icon">
-            <img src="/assets/lang/fr.png" width="25px" alt="" />
+            <img src={FRflag} width="25px" alt="" />
             <p>fr-FR</p>
           </figure>
         </div>
