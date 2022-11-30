@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/faneca/static/css/main.5c1ecdb9.css",
-    "main.js": "/faneca/static/js/main.aaa84e49.js",
-    "static/media/me.jpg": "/faneca/static/media/me.577aafe4705d49d80baa.jpg",
-    "index.html": "/faneca/index.html",
-    "main.5c1ecdb9.css.map": "/faneca/static/css/main.5c1ecdb9.css.map",
-    "main.aaa84e49.js.map": "/faneca/static/js/main.aaa84e49.js.map"
+    "main.css": "/Portfolio/static/css/main.76e1edb4.css",
+    "main.js": "/Portfolio/static/js/main.60e3749d.js",
+    "static/media/me.jpg": "/Portfolio/static/media/me.577aafe4705d49d80baa.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.76e1edb4.css.map": "/Portfolio/static/css/main.76e1edb4.css.map",
+    "main.60e3749d.js.map": "/Portfolio/static/js/main.60e3749d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c1ecdb9.css",
-    "static/js/main.aaa84e49.js"
+    "static/css/main.76e1edb4.css",
+    "static/js/main.60e3749d.js"
   ]
 }
