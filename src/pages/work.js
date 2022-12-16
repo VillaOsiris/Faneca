@@ -1,3 +1,7 @@
+import hpLogo from "../assets/images/HpLogo.png";
+import moovLogo from "../assets/images/MoovLogo.png";
+import bgamerLogo from "../assets/images/BgamerLogo.png";
+
 function Work() {
   return (
     <div className="work">
@@ -18,7 +22,7 @@ function Work() {
               <div className="proj--1"></div>
             </a>
           </div>
-          <h2 className="project__title">HealthPoint</h2>
+          <img src={hpLogo} alt="HealthPoint logo" style={{ height: "5rem" }} />
         </div>
         <div className="projects__container">
           <div className="project__container">
@@ -30,7 +34,7 @@ function Work() {
               <div className="proj--2"></div>
             </a>
           </div>
-          <h2 className="project__title">MooV</h2>
+          <img src={moovLogo} alt="Moov logo" style={{ height: "4rem" }} />
         </div>
         <div className="projects__container">
           <div className="project__container">
@@ -42,7 +46,7 @@ function Work() {
               <div className="proj--3"></div>
             </a>
           </div>
-          <h2 className="project__title">Bgamer</h2>
+          <img src={bgamerLogo} alt="Bgamer logo" style={{ height: "4rem" }} />
         </div>
       </div>
     </div>
