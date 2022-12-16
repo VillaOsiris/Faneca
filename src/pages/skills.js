@@ -15,7 +15,8 @@ import officeLogo from "../assets/logos/office.svg";
 import reactLogo from "../assets/logos/react.svg";
 import sassLogo from "../assets/logos/sass.svg";
 import tsLogo from "../assets/logos/typescript.svg";
-import vsLogo from "../assets/logos/VS_code.svg";
+import vsLogo from "../assets/logos/vs_code.svg";
+import photoshopLogo from "../assets/logos/photoshop.svg";
 import BRflag from "../assets/lang/br.png";
 import ENflag from "../assets/lang/usa.png";
 import ESflag from "../assets/lang/es.png";
@@ -150,17 +151,17 @@ function Skills() {
         <div className="about__grid--content">
           <h4 className="color--6">// 2015 (3months)</h4>
           <div>
-            <p>Curricular internship @ CMPF</p>
-            <p>Civil Engineer intern</p>
+            <p>Curricular Internship @ CMPF</p>
+            <p>Civil Engineer Intern</p>
           </div>
           <h4 className="color--6">// 2016 - 2022 (7years)</h4>
           <div>
             <p>Senior Engineer @ AAP</p>
-            <p>MEP specialist coordinator</p>
+            <p>MEP Specialist Coordinator</p>
           </div>
           <h4 className="color--6">// 2022 (current)</h4>
           <div>
-            <p>Frontend Developer @ faneca inc</p>
+            <p>Frontend Developer @ Faneca inc</p>
           </div>
         </div>
       </section>

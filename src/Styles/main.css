@@ -196,7 +196,7 @@ body {
   border-bottom-right-radius: 25px;
   text-align: center;
   -webkit-animation: moveInTop 6s;
-  animation: moveInTop 6s;
+          animation: moveInTop 6s;
 }
 .nav__list {
   display: flex;
@@ -326,7 +326,7 @@ body {
   top: 40%;
   right: 15%;
   -webkit-animation: fadeIn 6s;
-  animation: fadeIn 6s;
+          animation: fadeIn 6s;
 }
 
 .curve {
@@ -376,7 +376,7 @@ body {
   gap: 3rem;
   font-size: 1.5rem;
   -webkit-animation: fadeIn 4s;
-  animation: fadeIn 4s;
+          animation: fadeIn 4s;
 }
 .about__grid.row {
   display: grid;
@@ -441,3 +441,68 @@ body {
 .cv__btn:hover {
   scale: 1.1;
 }
+
+.work {
+  padding: 13vh 0 0 10vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  -webkit-animation: fadeIn 4s;
+          animation: fadeIn 4s;
+}
+
+.projects {
+  height: 60vh;
+  width: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: -10vw;
+}
+
+.project {
+  height: 325px;
+  width: 325px;
+  border-radius: 50%;
+  box-shadow: 0 0 7px 0 lightgray;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.project__title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.project.proj--1 {
+  background: url(/public/assets/images/hp_v4.png);
+  background-color: var(--color-secondary);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project.proj--2 {
+  background: url(/public/assets/images/hp_v4.png);
+  background-color: var(--color-secondary);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project.proj--3 {
+  background: url(/public/assets/images/bgamer_v1.png);
+  background-color: var(--color-secondary);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact {
+  padding: 13vh 0 0 10vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  -webkit-animation: fadeIn 4s;
+          animation: fadeIn 4s;
+}/*# sourceMappingURL=main.css.map */
