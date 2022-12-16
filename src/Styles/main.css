@@ -453,45 +453,73 @@ body {
 }
 
 .projects {
-  height: 60vh;
+  height: 70vh;
   width: 110%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2vw;
   margin-left: -10vw;
+}
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project__container {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project {
-  height: 325px;
-  width: 325px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   box-shadow: 0 0 7px 0 lightgray;
-  position: relative;
+  background-color: var(--color-secondary);
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: flex-end;
+  overflow: hidden;
+  transition: all 1.2s;
+}
+.project:hover {
+  height: 400px;
+  width: 400px;
+  box-shadow: 0 0 34px 0 lightgray;
 }
 .project__title {
   font-size: 3rem;
   font-weight: bold;
 }
-.project.proj--1 {
+
+.proj--1 {
+  height: 350px;
+  width: 350px;
   background: url(/public/assets/images/hp_v4.png);
-  background-color: var(--color-secondary);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-.project.proj--2 {
-  background: url(/public/assets/images/hp_v4.png);
-  background-color: var(--color-secondary);
+
+.proj--2 {
+  height: 350px;
+  width: 350px;
+  background: url(/public/assets/images/moov_v1_clipped.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-.project.proj--3 {
+
+.proj--3 {
+  height: 350px;
+  width: 350px;
   background: url(/public/assets/images/bgamer_v1.png);
-  background-color: var(--color-secondary);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

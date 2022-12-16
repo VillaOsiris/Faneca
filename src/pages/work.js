@@ -8,14 +8,29 @@ function Work() {
         <span className="color--4"> "/me/dev.js"</span>
       </h2>
       <div className="projects">
-        <div className="project proj--1">
-          <p className="project__title">HealtPoint</p>
+        <div className="projects__container">
+          <div className="project__container">
+            <div className="project">
+              <div className="proj--1"></div>
+            </div>
+          </div>
+          <h2 className="project__title">HealthPoint</h2>
         </div>
-        <div className="project proj--2">
-          <p className="project__title">MooV</p>
+        <div className="projects__container">
+          <div className="project__container">
+            <div className="project">
+              <div className="proj--2"></div>
+            </div>
+          </div>
+          <h2 className="project__title">MooV</h2>
         </div>
-        <div className="project proj--3">
-          <p className="project__title">Bgamer</p>
+        <div className="projects__container">
+          <div className="project__container">
+            <div className="project">
+              <div className="proj--3"></div>
+            </div>
+          </div>
+          <h2 className="project__title">Bgamer</h2>
         </div>
       </div>
     </div>
