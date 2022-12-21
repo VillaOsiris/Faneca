@@ -44,7 +44,7 @@
   &--1 {
     background: var(--color-terciary);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     font-size: 2rem;
     position: absolute;
     top: 0;
@@ -53,8 +53,8 @@
   }
 
   &--2 {
-    height: 400vh;
-    width: 100vw;
+    height: 370vh;
+    width: 100%;
     font-size: 1.5rem;
     position: absolute;
     top: 25%;
@@ -67,7 +67,7 @@
   &--3 {
     background: var(--color-terciary);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     font-size: 2rem;
     position: absolute;
     top: 120%;
@@ -160,7 +160,7 @@
   opacity: 0;
   -webkit-filter: blur(5px);
   filter: blur(5px);
-  transform: translate(-20%);
+  transform: translate(-10%);
   transition: all 3s;
 
   &.dot {

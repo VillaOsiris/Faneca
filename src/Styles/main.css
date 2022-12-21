@@ -273,7 +273,7 @@ body {
 .page--1 {
   background: var(--color-terciary);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   font-size: 2rem;
   position: absolute;
   top: 0;
@@ -281,8 +281,8 @@ body {
   padding-top: 20vw;
 }
 .page--2 {
-  height: 400vh;
-  width: 100vw;
+  height: 370vh;
+  width: 100%;
   font-size: 1.5rem;
   position: absolute;
   top: 25%;
@@ -294,7 +294,7 @@ body {
 .page--3 {
   background: var(--color-terciary);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   font-size: 2rem;
   position: absolute;
   top: 120%;
@@ -376,7 +376,7 @@ body {
   gap: 3rem;
   opacity: 0;
   filter: blur(5px);
-  transform: translate(-20%);
+  transform: translate(-10%);
   transition: all 3s;
 }
 .story__page.dot {
