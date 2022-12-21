@@ -1,6 +1,28 @@
+import { useEffect } from "react";
 import { FaLinkedin, FaGithub, FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 function Home() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            console.log(entry);
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+        });
+      },
+      { threshold: 1 }
+    );
+
+    const storyPages = document.querySelectorAll(".story__page");
+    storyPages.forEach((page) => {
+      return observer.observe(page);
+    });
+  }, []);
+
   return (
     <div className="container">
       <div className="sidebar">
@@ -42,10 +64,10 @@ function Home() {
             <span className="color--5">Front-end Developer</span>
           </h3>
           <p className="intro--1 color--6">
-            // I'm passioned for gaming, technology and digital arts. <br />
-            Drived by my curiosity to understand the different levels of
-            software development, coding, new features and testing the
-            functionality and usability.
+            // Passioned for gaming, technology and digital arts. <br />
+            I'm driven by my curiosity to understand the different levels of
+            software development, coding, new features and cross-browser
+            testing.
           </p>
           <p className="intro--2">
             <span>But wait...</span> Are you ready for a story? This is how it
@@ -64,119 +86,155 @@ function Home() {
           ></path>
         </svg>
       </section>
+
       <section className="page--2">
         <div className="story">
           <h2 className="story--tag">&lt;story&gt;</h2>
-          <p className="story__paragraph">
-            "Once upon a time, there was a kid...
-          </p>
-          <p className="story__paragraph">
-            That early discovered
-            <span className="story--highlight">
-              {" "}
-              the passion for building stuff and diferent ways of creating
-              things{" "}
-            </span>
-            ...
-            <br />
-            <br />
-            One day his father brought home the oldest pc from his office, and
-            the adiction for
-            <span className="story--highlight"> gamming and technology </span>
-            started...
-          </p>
-          <p className="story__paragraph">
-            As time passed, and as a teenager, he choose a carrer as a Civil
-            Engineer...
-            <br />
-            <br />
-            Started working as an intern in an international
-            Architectural/engineering company, a fully
-            <span className="story--highlight">
-              {" "}
-              multi-cultural environment{" "}
-            </span>
-            , doing high-end private and comercial projects...
-            <br />
-            <br />
-            Quickly showing his
-            <span className="story--highlight"> confidence </span> and
-            <span className="story--highlight"> problem solving </span>
-            qualities, together with his social skills, he became
-            <span className="story--highlight"> teamleader </span> with two
-            awosome pupils in just 2years...
-          </p>
-          <p className="story__paragraph">
-            +5 years passed, now a Senior Engineer, strived as
-            <span className="story--highlight"> Project Coordinator </span>,
-            Engineering
-            <span className="story--highlight"> Department Leader </span>
-            and Site Support Engineer...
-            <br />
-            <br />
-            But even with all those acomplishments, a steady job and salary, he
-            <span className="story--highlight">
-              {" "}
-              never knew the felling of "i work because i love what i do"
-            </span>
-            ...
-            <br />
-            <br />
-            And the regret for never trying to apply his technological and
-            coding knowladge, started to weight on his mind...
-          </p>
-          <p className="story__paragraph">
-            After seeing all his friends and
-            <span className="story--highlight"> gaming/coding </span>
-            communities focus in tech. related jobs...
-            <br />
-            <br />
-            With full support of his
-            <span className="story--highlight"> UX/UI </span>
-            Designer Girlfriend...
-            <br />
-            <br />
-            With lots... and i mean a
-            <span className="story--highlight"> looooooooot... of hours </span>
-            dedicated to
-            <span className="story--highlight"> self-learning </span>
-            and honing various
-            <span className="story--highlight"> Front-end </span>
-            skills...
-          </p>
-          <p className="story__paragraph">
-            He now feels ready for a plot twist!
-          </p>
-          <p className="story__paragraph">So this is how it goes:</p>
-          <p className="story__paragraph">
-            Hello, I'm
-            <span className="story--highlight"> Sérgio Costa</span>, Junior
-            <span className="story--highlight"> Front-end Developer</span>,{" "}
-            <span className="story--scratch">former Civil Engineer</span>.
-          </p>
-          <ul className="story__paragraph">
-            <li>
-              Likes Creative and
-              <span className="story--highlight"> UX/UI </span>environments;
-            </li>
-            <li>
-              Thinking in <span className="story--highlight"> React </span>;
-            </li>
-            <li>
-              Developing in<span className="story--highlight"> Agile </span>
-              frameworks;
-            </li>
-            <li>
-              Interested in working{" "}
-              <span className="story--highlight"> remote </span>;
-            </li>
-          </ul>
-          <p className="story__paragraph">
-            Now let’s write the next lines for this story together.
-          </p>
+          <div className="story__content">
+            <div className="story__page">
+              <p className="story__paragraph">
+                " Once upon a time, there was a kid...
+              </p>
+              <p className="story__paragraph">
+                That early discovered
+                <span className="story--highlight">
+                  {" "}
+                  the passion for building stuff and diferent ways of creating
+                  things{" "}
+                </span>
+                ...
+              </p>
+              <p className="story__paragraph">
+                One day his father brought home the oldest pc from his office,
+                and the adiction for
+                <span className="story--highlight">
+                  {" "}
+                  gamming and technology{" "}
+                </span>
+                started...
+              </p>
+            </div>
+            <div className="story__page dot">.</div>
+            <div className="story__page dot">.</div>
+            <div className="story__page dot">.</div>
+            <div className="story__page">
+              <p className="story__paragraph">
+                As time passed, and as a teenager, he choose a carrer as a Civil
+                Engineer...
+              </p>
+              <p className="story__paragraph">
+                Started working as an intern in an international
+                Architectural/engineering company, a fully
+                <span className="story--highlight">
+                  {" "}
+                  multi-cultural environment{" "}
+                </span>
+                , doing high-end private and comercial projects...
+              </p>
+              <p className="story__paragraph">
+                Quickly showing his
+                <span className="story--highlight"> confidence </span> and
+                <span className="story--highlight"> problem solving </span>
+                qualities, together with his social skills, he became
+                <span className="story--highlight"> teamleader </span> with two
+                awosome pupils in just 2years...
+              </p>
+            </div>
+            <div className="story__page dot">.</div>
+            <div className="story__page dot">.</div>
+            <div className="story__page dot">.</div>
+            <div className="story__page">
+              <p className="story__paragraph">
+                +5 years passed, now a Senior Engineer, strived as
+                <span className="story--highlight"> Project Coordinator </span>,
+                Engineering
+                <span className="story--highlight"> Department Leader </span>
+                and Site Support Engineer...
+              </p>
+              <p className="story__paragraph">
+                But even with all those acomplishments, a steady job and salary,
+                he
+                <span className="story--highlight">
+                  {" "}
+                  never knew the felling of "i work because i love what i do"
+                </span>
+                ...
+              </p>
+              <p className="story__paragraph">
+                And the regret for never trying to apply his technological and
+                coding knowladge, started to weight on his mind...
+              </p>
+            </div>
+            <div className="story__page dot">.</div>
+            <div className="story__page dot">.</div>
+            <div className="story__page dot">.</div>
+            <div className="story__page">
+              <p className="story__paragraph">
+                After seeing all his friends and
+                <span className="story--highlight"> gaming/coding </span>
+                communities focus in tech. related jobs...
+              </p>
+              <p className="story__paragraph">
+                With full support of his
+                <span className="story--highlight"> UX/UI </span>
+                Designer Girlfriend...
+              </p>
+              <p className="story__paragraph">
+                With lots... and i mean a
+                <span className="story--highlight">
+                  {" "}
+                  looooooooot... of hours{" "}
+                </span>
+                dedicated to
+                <span className="story--highlight"> self-learning </span>
+                and honing various
+                <span className="story--highlight"> Front-end </span>
+                skills...
+              </p>
+              <p className="story__paragraph">
+                He now feels ready for a plot twist!
+              </p>
+            </div>
+            <div className="story__page dot">.</div>
+            <div className="story__page dot">.</div>
+            <div className="story__page dot">.</div>
+            <div className="story__page">
+              <p className="story__paragraph">So this is how it goes:</p>
+              <p className="story__paragraph">
+                Hello, I'm
+                <span className="story--highlight"> Sérgio Costa</span>, Junior
+                <span className="story--highlight">
+                  {" "}
+                  Front-end Developer
+                </span>,{" "}
+                <span className="story--scratch">former Civil Engineer</span>.
+              </p>
+              <ul className="story__paragraph">
+                <li>
+                  Likes Creative and
+                  <span className="story--highlight"> UX/UI </span>environments;
+                </li>
+                <li>
+                  Thinking in <span className="story--highlight"> React </span>;
+                </li>
+                <li>
+                  Developing in<span className="story--highlight"> Agile </span>
+                  frameworks;
+                </li>
+                <li>
+                  Interested in working{" "}
+                  <span className="story--highlight"> remote </span>;
+                </li>
+              </ul>
+              <p className="story__paragraph">
+                Now let’s write the next lines for this story together.
+              </p>
+            </div>
+          </div>
           <h2 className="story--tag">&lt;/story&gt;</h2>
         </div>
       </section>
+
       <section className="page--3">
         <svg
           className="curve curve--top"

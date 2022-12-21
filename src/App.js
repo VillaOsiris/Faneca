@@ -4,7 +4,7 @@ import NavBar from "./Components/navbar";
 import Home from "./pages/home";
 import Skills from "./pages/skills";
 import Work from "./pages/work";
-import Contact from "./pages/contact";
+import More from "./pages/more";
 import Error from "./pages/error";
 import "./Styles/main.css";
 
@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/work" element={<Work />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/more" element={<More />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
