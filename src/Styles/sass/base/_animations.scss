@@ -13,10 +13,6 @@
     transform: translateX(-10rem);
   }
 
-  80% {
-    transform: translateX(1rem);
-  }
-
   100% {
     opacity: 1;
     transform: translate(0);
@@ -75,5 +71,19 @@
 
   100% {
     transform: translate(0);
+  }
+}
+
+@keyframes openUp {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }

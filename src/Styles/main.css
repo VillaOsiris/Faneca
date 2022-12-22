@@ -40,9 +40,6 @@ body {
     opacity: 0;
     transform: translateX(-10rem);
   }
-  80% {
-    transform: translateX(1rem);
-  }
   100% {
     opacity: 1;
     transform: translate(0);
@@ -52,9 +49,6 @@ body {
   0% {
     opacity: 0;
     transform: translateX(-10rem);
-  }
-  80% {
-    transform: translateX(1rem);
   }
   100% {
     opacity: 1;
@@ -149,6 +143,28 @@ body {
   }
   100% {
     transform: translate(0);
+  }
+}
+@-webkit-keyframes openUp {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes openUp {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 .color--2 {
@@ -401,6 +417,10 @@ body {
   -webkit-animation: fadeIn 4s;
           animation: fadeIn 4s;
 }
+.about__title {
+  -webkit-animation: moveInLeft 4s;
+          animation: moveInLeft 4s;
+}
 .about__grid.row {
   display: grid;
   grid-template-rows: -webkit-min-content 1fr;
@@ -474,6 +494,10 @@ body {
   -webkit-animation: fadeIn 4s;
           animation: fadeIn 4s;
 }
+.work__title {
+  -webkit-animation: moveInLeft 4s;
+          animation: moveInLeft 4s;
+}
 
 .projects {
   height: 70vh;
@@ -510,6 +534,8 @@ body {
   justify-content: center;
   overflow: hidden;
   transition: all 1.2s;
+  -webkit-animation: openUp 3s;
+          animation: openUp 3s;
 }
 .project:hover {
   height: 400px;
@@ -537,6 +563,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 .proj--3 {
@@ -546,9 +574,11 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
-.contact {
+.achievments {
   padding: 13vh 0 0 10vw;
   min-height: 100vh;
   display: flex;
@@ -556,4 +586,39 @@ body {
   font-size: 1.5rem;
   -webkit-animation: fadeIn 4s;
           animation: fadeIn 4s;
+}
+.achievments__title {
+  -webkit-animation: moveInLeft 4s;
+          animation: moveInLeft 4s;
+  margin-bottom: 4rem;
+}
+.achievments__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 50px 250px);
+  gap: 3rem;
+  margin-left: -3vw;
+}
+
+.achiev--icon {
+  border: 3px white solid;
+  box-shadow: 0 0 4px white;
+  background-color: #333;
+  height: 55px;
+  width: 55px;
+}
+.achiev--icon > svg {
+  fill: white;
+}
+
+.achiev--text {
+  color: white;
+}
+
+.locked {
+  border: 3px grey solid;
+  box-shadow: none;
+  color: grey;
+}
+.locked > svg {
+  fill: grey;
 }/*# sourceMappingURL=main.css.map */

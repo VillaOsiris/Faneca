@@ -7,6 +7,10 @@
   font-size: 1.5rem;
   animation: fadeIn 4s;
 
+  &__title {
+    animation: moveInLeft 4s;
+  }
+
   &__grid.row {
     display: grid;
     grid-template-rows: min-content 1fr;
