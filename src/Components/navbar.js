@@ -5,9 +5,9 @@ import logo from "../assets/faneca.svg";
 const NavBar = () => {
   return (
     <div className="nav">
-      <div className="nav__logo">
-        <img src={logo} alt="" />
-      </div>
+      <Link className="nav__logo" to="/">
+        <img src={logo} alt="faneca logo" />
+      </Link>
       <ul className="nav__list">
         <li className="nav__item">
           <Link to="/">
