@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/faneca.svg";
 // import { FaBars } from "react-icons/fa";
 
 const NavBar = () => {
   return (
     <div className="nav">
       <div className="nav__logo">
-        <p>LOGO</p>
+        <img src={logo} alt="" />
       </div>
       <ul className="nav__list">
         <li className="nav__item">

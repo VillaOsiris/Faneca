@@ -5,7 +5,6 @@
   flex-direction: column;
   gap: 3rem;
   font-size: 1.5rem;
-  animation: fadeIn 4s;
 
   &__title {
     animation: moveInLeft 4s;
@@ -17,6 +16,7 @@
     grid-auto-flow: column;
     width: min-content;
     gap: 3rem;
+    animation: fadeIn 6s;
   }
 
   &__grid--icons {

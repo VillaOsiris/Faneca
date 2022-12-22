@@ -22,7 +22,12 @@ function Work() {
               <div className="proj--1"></div>
             </a>
           </div>
-          <img src={hpLogo} alt="HealthPoint logo" style={{ height: "5rem" }} />
+          <img
+            className="project__logo"
+            src={hpLogo}
+            alt="HealthPoint logo"
+            style={{ height: "5rem" }}
+          />
         </div>
         <div className="projects__container">
           <div className="project__container">
@@ -34,7 +39,12 @@ function Work() {
               <div className="proj--2"></div>
             </a>
           </div>
-          <img src={moovLogo} alt="Moov logo" style={{ height: "4rem" }} />
+          <img
+            className="project__logo"
+            src={moovLogo}
+            alt="Moov logo"
+            style={{ height: "4rem" }}
+          />
         </div>
         <div className="projects__container">
           <div className="project__container">
@@ -46,7 +56,12 @@ function Work() {
               <div className="proj--3"></div>
             </a>
           </div>
-          <img src={bgamerLogo} alt="Bgamer logo" style={{ height: "4rem" }} />
+          <img
+            className="project__logo"
+            src={bgamerLogo}
+            alt="Bgamer logo"
+            style={{ height: "4rem" }}
+          />
         </div>
       </div>
     </div>

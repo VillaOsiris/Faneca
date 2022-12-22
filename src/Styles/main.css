@@ -208,11 +208,16 @@ body {
   background: var(--color-secondary);
   width: 150px;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  text-align: center;
   -webkit-animation: moveInTop 6s;
           animation: moveInTop 6s;
+}
+.nav__logo > img {
+  transform: scale(1.5);
 }
 .nav__list {
   display: flex;
@@ -414,8 +419,6 @@ body {
   flex-direction: column;
   gap: 3rem;
   font-size: 1.5rem;
-  -webkit-animation: fadeIn 4s;
-          animation: fadeIn 4s;
 }
 .about__title {
   -webkit-animation: moveInLeft 4s;
@@ -430,6 +433,8 @@ body {
   width: -moz-min-content;
   width: min-content;
   gap: 3rem;
+  -webkit-animation: fadeIn 6s;
+          animation: fadeIn 6s;
 }
 .about__grid--icons {
   display: grid;
@@ -527,7 +532,8 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  box-shadow: 0 0 7px 0 lightgray;
+  border: 0.5px white solid;
+  box-shadow: 0 0 10px 0 lightgray;
   background-color: var(--color-secondary);
   display: flex;
   align-items: center;
@@ -545,6 +551,10 @@ body {
 .project__title {
   font-size: 3rem;
   font-weight: bold;
+}
+.project__logo {
+  -webkit-animation: fadeIn 4s;
+          animation: fadeIn 4s;
 }
 
 .proj--1 {
@@ -597,6 +607,8 @@ body {
   grid-template-columns: repeat(4, 50px 250px);
   gap: 3rem;
   margin-left: -3vw;
+  -webkit-animation: fadeIn 10s;
+          animation: fadeIn 10s;
 }
 
 .achiev--icon {
