@@ -60,3 +60,26 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 5vw;
+    &__list {
+      opacity: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 0 5vw;
+
+    &__list {
+      opacity: 0;
+    }
+
+    &__item > a {
+      margin-left: 0.5rem;
+    }
+  }
+}

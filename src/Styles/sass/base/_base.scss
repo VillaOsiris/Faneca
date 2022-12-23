@@ -17,4 +17,37 @@ body {
   box-sizing: border-box;
   background: var(--color-terciary);
   color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+.page {
+  &--container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-left: 10vw;
+    gap: 3rem;
+  }
+
+  &--title {
+    animation: moveInLeft 4s;
+  }
+
+  &--content {
+    animation: fadeIn 6s;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    &--container {
+      padding-left: 5vw;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1.1rem;
+  }
 }

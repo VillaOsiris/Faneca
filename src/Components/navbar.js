@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/faneca.svg";
-// import { FaBars } from "react-icons/fa";
 
 const NavBar = () => {
   return (

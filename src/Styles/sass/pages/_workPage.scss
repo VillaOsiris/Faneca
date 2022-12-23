@@ -1,39 +1,24 @@
 .work {
-  padding: 13vh 0 0 10vw;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-  animation: fadeIn 4s;
-
-  &__title {
-    animation: moveInLeft 4s;
-  }
-}
-
-.projects {
-  height: 70vh;
-  width: 110%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2vw;
-  margin-left: -10vw;
+  justify-content: space-between;
+  padding-right: 10vw;
 
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
   }
 }
 
 .project__container {
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .project {
@@ -67,30 +52,41 @@
 }
 
 .proj--1 {
-  height: 350px;
-  width: 350px;
   background: url(/public/assets/images/hp_v4.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-
 .proj--2 {
-  height: 350px;
-  width: 350px;
   background: url(/public/assets/images/moov_v1_clipped.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  animation-delay: 300ms;
 }
-
+.proj--3 {
+  background: url(/public/assets/images/bgamer_v1.png);
+}
+.proj--1,
+.proj--2,
 .proj--3 {
   height: 350px;
   width: 350px;
-  background: url(/public/assets/images/bgamer_v1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  animation-delay: 600ms;
+}
+
+@media (max-width: 768px) {
+  .work {
+    flex-direction: column;
+  }
+  .project__container {
+    height: 350px;
+    width: 350px;
+    gap: 1rem;
+  }
+  .project:hover {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work__title {
+    font-size: 2rem;
+  }
 }

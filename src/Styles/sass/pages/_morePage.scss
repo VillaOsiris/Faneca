@@ -1,0 +1,42 @@
+.achievments {
+  display: grid;
+  grid-template-columns: repeat(4, 55px 220px);
+  gap: 3rem;
+}
+
+.achiev--icon {
+  border: 3px white solid;
+  box-shadow: 0 0 4px white;
+  background-color: #333;
+  height: 55px;
+  width: 55px;
+
+  & > svg {
+    fill: white;
+  }
+}
+.achiev--text {
+  color: white;
+}
+
+.locked {
+  border: 3px grey solid;
+  box-shadow: none;
+  color: grey;
+
+  & > svg {
+    fill: grey;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievments {
+    grid-template-columns: repeat(3, 55px 150px);
+  }
+}
+
+@media (max-width: 480px) {
+  .achievments {
+    grid-template-columns: repeat(2, 55px 150px);
+  }
+}
