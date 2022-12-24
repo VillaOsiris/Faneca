@@ -74,13 +74,13 @@ function Home() {
           </h3>
           <p className="intro--1 color--6">
             // Passioned for gaming, technology and digital arts. <br />
-            I'm driven by my curiosity to understand the different levels of
-            software development, coding, new features and cross-browser
+            I'm driven by the curiosity to understand different levels of
+            software development, coding, newest features and cross-browser
             testing.
           </p>
           <p className="intro--2">
-            <span>But wait...</span> Are you ready for a story? This is how it
-            starts...
+            <span>But wait...</span> Are you ready for a story? This is how
+            everything started...
           </p>
         </div>
         <div className="circle"></div>
@@ -115,7 +115,7 @@ function Home() {
               </p>
               <p className="story__paragraph">
                 One day his father brought home the oldest pc from his office,
-                and the adiction for
+                and the addiction for
                 <span className="story--highlight">
                   {" "}
                   gamming and technology{" "}
@@ -128,12 +128,12 @@ function Home() {
             <div className="story__page dot">.</div>
             <div className="story__page">
               <p className="story__paragraph">
-                As time passed, and as a teenager, he choose a carrer as a Civil
+                As time passed, as a teenager, he choose a carrer as a Civil
                 Engineer...
               </p>
               <p className="story__paragraph">
                 Started working as an intern in an international
-                Architectural/engineering company, a fully
+                Architectural/engineering company, with a fully
                 <span className="story--highlight">
                   {" "}
                   multi-cultural environment{" "}
@@ -145,8 +145,8 @@ function Home() {
                 <span className="story--highlight"> confidence </span> and
                 <span className="story--highlight"> problem solving </span>
                 qualities, together with his social skills, he became
-                <span className="story--highlight"> teamleader </span> with two
-                awosome pupils in just 2years...
+                <span className="story--highlight"> teamleader </span> within
+                two years, with two awesome pupils...
               </p>
             </div>
             <div className="story__page dot">.</div>
@@ -154,7 +154,7 @@ function Home() {
             <div className="story__page dot">.</div>
             <div className="story__page">
               <p className="story__paragraph">
-                +5 years passed, now a Senior Engineer, strived as
+                +5 years passed, now as Senior Engineer, throve as
                 <span className="story--highlight"> Project Coordinator </span>,
                 Engineering
                 <span className="story--highlight"> Department Leader </span>
@@ -162,10 +162,10 @@ function Home() {
               </p>
               <p className="story__paragraph">
                 But even with all those acomplishments, a steady job and salary,
-                he
+                he never knew the felling of
                 <span className="story--highlight">
                   {" "}
-                  never knew the felling of "i work because i love what i do"
+                  "i work because i love what i do"
                 </span>
                 ...
               </p>
@@ -179,9 +179,10 @@ function Home() {
             <div className="story__page dot">.</div>
             <div className="story__page">
               <p className="story__paragraph">
-                After seeing all his friends and
+                After seeing all his friends focus in tech. related jobs and
+                been part of some
                 <span className="story--highlight"> gaming/coding </span>
-                communities focus in tech. related jobs...
+                communities...
               </p>
               <p className="story__paragraph">
                 With full support of his
@@ -197,7 +198,7 @@ function Home() {
                 dedicated to
                 <span className="story--highlight"> self-learning </span>
                 and honing various
-                <span className="story--highlight"> Front-end </span>
+                <span className="story--highlight"> Frontend </span>
                 skills...
               </p>
               <p className="story__paragraph">
@@ -211,11 +212,8 @@ function Home() {
               <p className="story__paragraph">So this is how it goes:</p>
               <p className="story__paragraph">
                 Hello, I'm
-                <span className="story--highlight"> Sérgio Costa</span>, Junior
-                <span className="story--highlight">
-                  {" "}
-                  Front-end Developer
-                </span>,{" "}
+                <span className="story--highlight"> Sérgio Costa</span>,
+                <span className="story--highlight"> Front-end Developer</span>,{" "}
                 <span className="story--scratch">former Civil Engineer</span>.
               </p>
               <ul className="story__paragraph">
@@ -236,7 +234,7 @@ function Home() {
                 </li>
               </ul>
               <p className="story__paragraph">
-                Now let’s write the next lines for this story together.
+                Now, let’s write the next lines for this story together.
               </p>
             </div>
           </div>

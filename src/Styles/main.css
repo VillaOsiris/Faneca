@@ -239,6 +239,7 @@ body {
   align-items: center;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  box-shadow: 0 0 5px 0 white;
   -webkit-animation: moveInTop 6s;
           animation: moveInTop 6s;
 }
