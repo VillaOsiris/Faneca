@@ -231,8 +231,8 @@ function Home() {
                   frameworks;
                 </li>
                 <li>
-                  Interested in working{" "}
-                  <span className="story--highlight"> remote </span>;
+                  Pleased to work as{" "}
+                  <span className="story--highlight"> Remote</span>;
                 </li>
               </ul>
               <p className="story__paragraph">
