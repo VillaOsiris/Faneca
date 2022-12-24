@@ -1,7 +1,10 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub, FaWhatsapp, FaFacebook } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Home() {
+  const [showModal, setShowModal] = useState(false);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -47,10 +50,16 @@ function Home() {
           </a>
         </div>
         <div className="sidebar--btn">
-          <a href="https://whatsapp.com" target="_blank">
+          <a onClick={() => setShowModal(!showModal)}>
             <FaWhatsapp />
           </a>
         </div>
+        {showModal && (
+          <div className="contact__modal">
+            <p>(+34) 612 225 757</p>
+            <p>sergio20128@hotmail.com</p>
+          </div>
+        )}
       </div>
       <section className="page--1">
         <div className="page__content">

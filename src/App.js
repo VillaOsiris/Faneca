@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./Components/Navbar";
+import ToTopButton from "./Components/ToTopButton";
 import Home from "./pages/homePage";
 import Skills from "./pages/skillsPage";
 import Work from "./pages/workPage";
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <ToTopButton />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/skills" element={<Skills />} />
