@@ -98,6 +98,48 @@
   }
 }
 
+.courses__modal {
+  position: fixed;
+  top: 16%;
+  right: 0%;
+  background-color: var(--color-secondary);
+  height: 84%;
+  width: 97vw;
+  border-top-left-radius: 25px;
+  z-index: 2;
+  padding: 4rem 6rem;
+  animation: slideInRight 3s;
+
+  &--button {
+    position: fixed;
+    bottom: 0%;
+    right: -4.5%;
+    transform: rotate(-90deg);
+    padding: 10px 20px;
+    height: 50px;
+    border-top-right-radius: 15px;
+    background-color: var(--color-secondary);
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.course {
+  & > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+  }
+  & > h3 {
+    margin-bottom: 1rem;
+    color: #ccc;
+  }
+  & > p {
+    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
 @media (max-width: 768px) {
   .skills__grid {
     grid-auto-flow: row;

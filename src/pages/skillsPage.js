@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { GiRetroController, GiSittingDog, GiMusicSpell } from "react-icons/gi";
 import { BiFootball, BiDrink, BiDownload } from "react-icons/bi";
 import { IoCarSportSharp } from "react-icons/io5";
@@ -24,6 +25,8 @@ import FRflag from "../assets/lang/fr.png";
 import PTflag from "../assets/lang/pt.png";
 
 function Skills() {
+  const [coursesModal, setCoursesModal] = useState(false);
+
   return (
     <div className="page--container">
       <h2 className="page--title">
@@ -37,6 +40,57 @@ function Skills() {
           </a>
         </button>
       </h2>
+      <button
+        className="courses__modal--button"
+        onClick={() => {
+          setCoursesModal(true);
+        }}
+      >
+        Courses History
+      </button>
+      {coursesModal && (
+        <div
+          className="courses__modal"
+          onClick={() => {
+            setCoursesModal(false);
+          }}
+        >
+          <div className="course">
+            <h2>Udemy</h2>
+            <h3>by Jonas Schmedtmann</h3>
+            <p>"Build Responsive Real-World Websites with HTML and CSS"</p>
+            <p>"Advanced CSS and Sass: Flexbox, Grid, Animations and More!"</p>
+            <p>"The Complete JavaScript Course 2023: From Zero to Expert!"</p>
+          </div>
+          <div className="course">
+            <h2>CodeWithMosh</h2>
+            <h3>by Mosh Hamedani</h3>
+            <p>"The Ultimate HTML5 & CSS3 Series"</p>
+            <p>"The Ultimate JavaScript Series"</p>
+            <p>"Mastering React"</p>
+            <p>"The Ultimate Git Course"</p>
+            <p>"The Ultimate TypeScript Course"</p>
+          </div>
+          <div className="course">
+            <h2>CodingAddict</h2>
+            <h3>by John Smilga</h3>
+            <p>
+              "Full React Course 2020 - Learn Fundamentals, Hooks, Context API,
+              React Router, Custom Hooks"
+            </p>
+            <p>"React Tutorial and Projects Course (2022)"</p>
+          </div>
+          <div className="course">
+            <h2>FreeCodeCamp</h2>
+            <p>"Responsive Web Design Certification"</p>
+            <p>"JavaScript Algorithms and Data Structures Certification"</p>
+            <p>
+              "Frontend Development Libraries Certification (sass, redux and
+              react)"
+            </p>
+          </div>
+        </div>
+      )}
       <div className="page--content skills">
         <section className="skills__grid">
           <h3 className="skills__grid--title">Skills:</h3>

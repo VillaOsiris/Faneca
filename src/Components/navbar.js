@@ -4,7 +4,7 @@ import logo from "../assets/faneca.svg";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
-  const [navModal, setNavModal] = useState(true);
+  const [navModal, setNavModal] = useState(false);
 
   return (
     <div className="nav">
