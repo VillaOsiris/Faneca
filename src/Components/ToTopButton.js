@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 function ToTopButton() {
   // When the user scrolls down 20px from the top of the document, show the button
@@ -23,11 +24,9 @@ function ToTopButton() {
   }
 
   return (
-    <button
-      id="backTop"
-      className="backTop"
-      onClick={() => topFunction()}
-    ></button>
+    <button id="backTop" className="backTop" onClick={() => topFunction()}>
+      <FaArrowUp />
+    </button>
   );
 }
 
