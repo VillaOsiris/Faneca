@@ -294,20 +294,15 @@ function Home() {
             setLantern(false);
           }}
         >
-          <div className="animate">
-            <div className="background"></div>
-          </div>
-          <div className="text-wrapper">
-            <h1 className="ttt">Can't see me. Wait...</h1>
-            <p className="text1">REACT</p>
-            <p className="text2">KEEP LOOKING</p>
-            <p className="text3">WEBDEV</p>
-            <p className="text4">WOW!</p>
-            <p className="text5">BOO!</p>
-            <p className="text6">AGILE</p>
-            <p className="qr">QR</p>
-            <p className="date">updated: jan 2023</p>
-          </div>
+          <p className="text1">Keep looking...</p>
+          <p className="text2">REACT</p>
+          <p className="text3">MUCH FUN!</p>
+          <p className="text4">WOW!</p>
+          <p className="text5">TEAMPLAYER</p>
+          <p className="text6">CREATIVE</p>
+          <p className="text7">AGILE</p>
+          <p className="qr">QR</p>
+          <p className="date">updated: jan 2023</p>
         </div>
       </section>
     </div>
