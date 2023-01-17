@@ -1,13 +1,10 @@
 .work {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 10vw;
+  margin-left: -7vw;
 
-  &__container {
+  & > div {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -18,7 +15,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .project {
@@ -48,6 +45,17 @@
 
   &__logo {
     animation: fadeIn 4s;
+  }
+  &__highlights {
+    align-self: center;
+    color: #aaa;
+    & > h3 {
+      margin-bottom: 1rem;
+    }
+    & > ul {
+      padding-left: 1.5rem;
+      line-height: 1.2;
+    }
   }
 }
 

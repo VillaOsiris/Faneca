@@ -42,6 +42,7 @@
     margin-left: 2rem;
     position: relative;
     transition: all 2sec;
+    cursor: none;
 
     & > span {
       color: var(--text-primary);
@@ -134,6 +135,11 @@
 @media (max-width: 480px) {
   .nav {
     padding: 0 5vw;
+
+    &__logo {
+      transform: scale(0.75);
+      margin-top: -1rem;
+    }
 
     &__list {
       opacity: 0;

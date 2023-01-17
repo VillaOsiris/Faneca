@@ -74,6 +74,19 @@
   }
 }
 
+@keyframes moveArrow {
+  0% {
+    transform: translateY(30%);
+  }
+
+  50% {
+    transform: translateY(175%);
+  }
+  100% {
+    transform: translateY(30%);
+  }
+}
+
 @keyframes openUp {
   0% {
     transform: scale(0);

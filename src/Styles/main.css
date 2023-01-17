@@ -172,6 +172,28 @@ body {
     transform: translate(0);
   }
 }
+@-webkit-keyframes moveArrow {
+  0% {
+    transform: translateY(30%);
+  }
+  50% {
+    transform: translateY(175%);
+  }
+  100% {
+    transform: translateY(30%);
+  }
+}
+@keyframes moveArrow {
+  0% {
+    transform: translateY(30%);
+  }
+  50% {
+    transform: translateY(175%);
+  }
+  100% {
+    transform: translateY(30%);
+  }
+}
 @-webkit-keyframes openUp {
   0% {
     transform: scale(0);
@@ -301,6 +323,7 @@ body {
   margin-left: 2rem;
   position: relative;
   transition: all 2sec;
+  cursor: none;
 }
 .nav__item > a > span {
   color: var(--text-primary);
@@ -384,6 +407,10 @@ body {
   .nav {
     padding: 0 5vw;
   }
+  .nav__logo {
+    transform: scale(0.75);
+    margin-top: -1rem;
+  }
   .nav__list {
     opacity: 0;
   }
@@ -433,13 +460,14 @@ body {
   background: linear-gradient(to left, #859398, #283048);
   font-weight: bold;
   letter-spacing: 0.2px;
+  padding: 0 0 10vh 0;
 }
 .story__page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 20vw;
-  padding: 5vh 0;
+  padding: 10vh 0;
   gap: 3rem;
   opacity: 0;
   filter: blur(5px);
@@ -470,6 +498,15 @@ body {
 }
 .story--scratch {
   text-decoration: line-through;
+}
+
+.placeholder--tag {
+  margin-top: 10vh;
+  text-align: center;
+}
+.placeholder--tag > svg {
+  -webkit-animation: moveArrow 2s infinite;
+          animation: moveArrow 2s infinite;
 }
 
 svg {
@@ -612,6 +649,9 @@ svg {
   -webkit-animation: moveInRight 3s;
           animation: moveInRight 3s;
 }
+.contact__modal:hover {
+  cursor: default;
+}
 
 .backTop {
   display: none;
@@ -627,6 +667,129 @@ svg {
   box-shadow: 0 0 5px 0 white;
 }
 
+@media (max-width: 768px) {
+  .container {
+    cursor: default;
+  }
+  .intro {
+    padding: 30vh 0 5vh 10vw;
+  }
+  .intro__title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .intro--photo {
+    transform: scale(0.75);
+    top: 3%;
+    right: 16%;
+  }
+  .story__page {
+    margin-left: 10vw;
+  }
+  .story__page.dot {
+    font-size: 2rem;
+  }
+  .story--tag {
+    margin-left: 5vw;
+    letter-spacing: 0.3px;
+  }
+  .story__paragraph {
+    font-size: 1.5rem;
+  }
+  .story__paragraph > li {
+    font-size: 1.3rem;
+  }
+  .footer--grid {
+    padding: 3rem;
+    color: var(--color-terciary);
+    mix-blend-mode: normal;
+  }
+  .qr {
+    color: var(--text-primary);
+  }
+  .date {
+    color: var(--text-primary);
+  }
+  .cursor--element {
+    display: none;
+  }
+  .sidebar {
+    right: -1%;
+    top: 25%;
+    transform: scale(0.75);
+  }
+  .contact__modal {
+    right: 115%;
+    bottom: -15%;
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 480px) {
+  .intro {
+    padding: 30vh 0 5vh 5vw;
+  }
+  .intro__title {
+    font-size: 2.5rem;
+  }
+  .intro--photo {
+    transform: scale(0.55);
+    top: 0.7%;
+    right: 7%;
+  }
+  .intro--1 {
+    margin-top: 6rem;
+    max-width: 45ch;
+    font-size: 1.5rem;
+  }
+  .intro--2 {
+    font-size: 1.5rem;
+    max-width: 40ch;
+    line-height: 1.3;
+  }
+  .story__page.dot {
+    font-size: 1.5rem;
+  }
+  .story--tag {
+    font-size: 2rem;
+  }
+  .story__paragraph {
+    font-size: 1.4rem;
+    width: 40ch;
+  }
+  .story__paragraph > li {
+    font-size: 1.3rem;
+  }
+  .story--highlight {
+    font-size: 1.7rem;
+  }
+  .footer--grid {
+    padding: 0rem;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(6, -webkit-min-content);
+    grid-template-columns: repeat(6, min-content);
+  }
+  .text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.cursor--element {
+    display: none;
+  }
+  .sidebar {
+    right: -1%;
+    top: 25%;
+    transform: scale(0.75);
+  }
+  .contact__modal {
+    right: 115%;
+    bottom: -15%;
+    font-size: 1.7rem;
+  }
+}
 .skills {
   display: flex;
   flex-direction: column;
@@ -722,8 +885,8 @@ svg {
   top: 16%;
   right: 0%;
   background-color: var(--color-secondary);
-  height: 84%;
-  width: 97vw;
+  height: 85%;
+  width: 90vw;
   border-top-left-radius: 25px;
   z-index: 2;
   padding: 4rem 6rem;
@@ -732,29 +895,40 @@ svg {
 }
 .courses__modal--button {
   position: fixed;
-  bottom: 0%;
-  right: -4.5%;
+  bottom: 5%;
+  right: -3.5%;
   transform: rotate(-90deg);
-  padding: 10px 20px;
-  height: 50px;
+  padding: 15px 30px;
+  height: 60px;
   border-top-right-radius: 15px;
   background-color: var(--color-secondary);
   color: white;
   font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.course--grid {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .course > h2 {
-  font-size: 2.5rem;
+  letter-spacing: 0.5px;
   margin-bottom: 0.5rem;
-  margin-top: 3rem;
+  font-size: 2.5rem;
 }
 .course > h3 {
-  margin-bottom: 1rem;
-  color: #ccc;
+  margin-bottom: 2rem;
+  color: #aaa;
 }
-.course > p {
+.course > ul {
+  padding-left: 1.8rem;
+}
+.course > ul > li {
+  width: 70ch;
   font-size: 1.6rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -779,14 +953,11 @@ svg {
 }
 .work {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 10vw;
+  margin-left: -7vw;
 }
-.work__container {
+.work > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .project__container {
@@ -796,7 +967,7 @@ svg {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .project {
@@ -826,6 +997,17 @@ svg {
 .project__logo {
   -webkit-animation: fadeIn 4s;
           animation: fadeIn 4s;
+}
+.project__highlights {
+  align-self: center;
+  color: #aaa;
+}
+.project__highlights > h3 {
+  margin-bottom: 1rem;
+}
+.project__highlights > ul {
+  padding-left: 1.5rem;
+  line-height: 1.2;
 }
 
 .proj--1 {
@@ -871,8 +1053,8 @@ svg {
 }
 .achievments {
   display: grid;
-  grid-template-columns: repeat(4, 55px 220px);
-  gap: 3rem;
+  grid-template-columns: repeat(4, 50px 215px);
+  gap: 3.5rem;
 }
 
 .achiev--icon {
@@ -906,6 +1088,10 @@ svg {
 }
 @media (max-width: 480px) {
   .achievments {
-    grid-template-columns: repeat(2, 55px 150px);
+    grid-template-columns: repeat(2, 50px 110px);
+    gap: 1rem;
+  }
+  .achiev--icon {
+    transform: scale(0.75);
   }
 }/*# sourceMappingURL=main.css.map */

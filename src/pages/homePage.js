@@ -1,10 +1,17 @@
 import { useState, useEffect } from "react";
-import { FaLinkedin, FaGithub, FaWhatsapp, FaFacebook } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaWhatsapp,
+  FaCodepen,
+  FaArrowDown,
+} from "react-icons/fa";
 
 function Home() {
   const [showModal, setShowModal] = useState(false);
   const [lantern, setLantern] = useState(false);
 
+  // STORY PAGE EVENT
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -25,6 +32,7 @@ function Home() {
     });
   }, []);
 
+  // MOUSE POSITION EVENT
   useEffect(() => {
     let cursor = document.getElementById("cursor");
 
@@ -36,29 +44,6 @@ function Home() {
       cursor.style.top = y + "px";
     });
   }, []);
-
-  // useEffect(() => {
-  //   let options = {
-  //     root: null,
-  //     threshold: 1,
-  //   };
-
-  //   const object2 = document.getElementById("test");
-
-  //   let observer2 = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       const object = document.getElementById("cursor");
-  //       if (entry.isIntersecting) {
-  //         console.log(entry);
-  //         object.classList.add("int");
-  //       } else {
-  //         object.classList.remove("int");
-  //       }
-  //     });
-  //   }, options);
-
-  //   observer2.observe(object2);
-  // }, []);
 
   return (
     <div className="container">
@@ -79,8 +64,8 @@ function Home() {
           </a>
         </div>
         <div className="sidebar--btn">
-          <a href="https://facebook.com" target="_blank">
-            <FaFacebook />
+          <a href="https://codepen.io/VillaOsiris" target="_blank">
+            <FaCodepen />
           </a>
         </div>
         <div className="sidebar--btn">
@@ -134,21 +119,21 @@ function Home() {
         <div className="story__content">
           <div className="story__page">
             <p className="story__paragraph">
-              "Once upon a time, there was a kid...
+              "Once upon a time, there was a kid.
             </p>
             <p className="story__paragraph">
               That early discovered
               <span className="story--highlight">
                 {" "}
-                the passion for building stuff and diferent ways of creating
-                things{" "}
+                the passion for building stuff and finding different ways of
+                creating things
               </span>
-              ...
+              .
             </p>
             <p className="story__paragraph">
               One day his father brought home the oldest pc from his office, and
               the addiction for
-              <span className="story--highlight"> gamming and technology </span>
+              <span className="story--highlight"> Gamming and Technology </span>
               started...
             </p>
           </div>
@@ -157,24 +142,24 @@ function Home() {
           <div className="story__page dot">.</div>
           <div className="story__page">
             <p className="story__paragraph">
-              As time passed, as a teenager, he choose a carrer as a Civil
-              Engineer...
+              As time passed, as a teenager, he chose a carrer as a Civil
+              Engineer.
             </p>
             <p className="story__paragraph">
               Started working as an intern in an international
-              Architectural/engineering company, with a fully
+              Architectural/Engineering company, with a fully
               <span className="story--highlight">
                 {" "}
-                multi-cultural environment{" "}
+                Multicultural Environment
               </span>
-              , doing high-end private and comercial projects...
+              , doing high-end private and comercial projects.
             </p>
             <p className="story__paragraph">
               Quickly showing his
-              <span className="story--highlight"> confidence </span> and
-              <span className="story--highlight"> problem solving </span>
+              <span className="story--highlight"> Confidence </span> and
+              <span className="story--highlight"> Problem Solving </span>
               qualities, together with his social skills, he became
-              <span className="story--highlight"> teamleader </span> within two
+              <span className="story--highlight"> Teamleader </span> within two
               years, with two awesome pupils...
             </p>
           </div>
@@ -184,19 +169,19 @@ function Home() {
           <div className="story__page">
             <p className="story__paragraph">
               +5 years passed, now as Senior Engineer, throve as
-              <span className="story--highlight"> Project Coordinator </span>,
+              <span className="story--highlight"> Project Coordinator</span>,
               Engineering
               <span className="story--highlight"> Department Leader </span>
-              and Site Support Engineer...
+              and Site Support Engineer.
             </p>
             <p className="story__paragraph">
-              But even with all those acomplishments, a steady job and salary,
+              But even with all those accomplishments, a steady job and salary,
               he never knew the felling of
               <span className="story--highlight">
                 {" "}
-                "i work because i love what i do"
+                "loving the work you do"
               </span>
-              ...
+              .
             </p>
             <p className="story__paragraph">
               And the regret for never trying to apply his technological and
@@ -208,30 +193,30 @@ function Home() {
           <div className="story__page dot">.</div>
           <div className="story__page">
             <p className="story__paragraph">
-              After seeing all his friends focus in tech. related jobs and been
-              part of some
-              <span className="story--highlight"> gaming/coding </span>
-              communities...
+              After seeing all his friends focusing on tech. related jobs and
+              been part of some
+              <span className="story--highlight"> Gaming/Coding </span>
+              communities.
             </p>
             <p className="story__paragraph">
               With full support of his
               <span className="story--highlight"> UX/UI </span>
-              Designer Girlfriend...
+              Designer Girlfriend.
             </p>
             <p className="story__paragraph">
-              With lots... and i mean a
+              With lots... and i mean
               <span className="story--highlight">
                 {" "}
-                looooooooot... of hours{" "}
+                looooooooots... of hours{" "}
               </span>
               dedicated to
-              <span className="story--highlight"> self-learning </span>
+              <span className="story--highlight"> Self-learning </span>
               and honing various
-              <span className="story--highlight"> Frontend </span>
-              skills...
+              <span className="story--highlight"> Front-end </span>
+              skills.
             </p>
             <p className="story__paragraph">
-              He now feels ready for a plot twist!
+              He now feels ready for a plot twist!"
             </p>
           </div>
           <div className="story__page dot">.</div>
@@ -251,7 +236,7 @@ function Home() {
                 <span className="story--highlight"> UX/UI </span>environments;
               </li>
               <li>
-                Thinking in <span className="story--highlight"> React </span>;
+                Thinking in <span className="story--highlight"> React</span>;
               </li>
               <li>
                 Developing in<span className="story--highlight"> Agile </span>
@@ -268,6 +253,10 @@ function Home() {
           </div>
         </div>
         <h2 className="story--tag">&lt;/story&gt;</h2>
+        <h2 className="placeholder--tag">
+          <p>"Don't stop me now!"</p>
+          <FaArrowDown />
+        </h2>
       </section>
       <svg
         id="wave"

@@ -1,7 +1,7 @@
 .achievments {
   display: grid;
-  grid-template-columns: repeat(4, 55px 220px);
-  gap: 3rem;
+  grid-template-columns: repeat(4, 50px 215px);
+  gap: 3.5rem;
 }
 
 .achiev--icon {
@@ -37,6 +37,11 @@
 
 @media (max-width: 480px) {
   .achievments {
-    grid-template-columns: repeat(2, 55px 150px);
+    grid-template-columns: repeat(2, 50px 110px);
+    gap: 1rem;
+  }
+
+  .achiev--icon {
+    transform: scale(0.75);
   }
 }

@@ -46,7 +46,7 @@ function Skills() {
           setCoursesModal(true);
         }}
       >
-        Courses History
+        Education
       </button>
       {coursesModal && (
         <div
@@ -55,39 +55,66 @@ function Skills() {
             setCoursesModal(false);
           }}
         >
-          <div className="course">
-            <h2>Udemy</h2>
-            <h3>by Jonas Schmedtmann</h3>
-            <p>"Build Responsive Real-World Websites with HTML and CSS"</p>
-            <p>"Advanced CSS and Sass: Flexbox, Grid, Animations and More!"</p>
-            <p>"The Complete JavaScript Course 2023: From Zero to Expert!"</p>
-          </div>
-          <div className="course">
-            <h2>CodeWithMosh</h2>
-            <h3>by Mosh Hamedani</h3>
-            <p>"The Ultimate HTML5 & CSS3 Series"</p>
-            <p>"The Ultimate JavaScript Series"</p>
-            <p>"Mastering React"</p>
-            <p>"The Ultimate Git Course"</p>
-            <p>"The Ultimate TypeScript Course"</p>
-          </div>
-          <div className="course">
-            <h2>CodingAddict</h2>
-            <h3>by John Smilga</h3>
-            <p>
-              "Full React Course 2020 - Learn Fundamentals, Hooks, Context API,
-              React Router, Custom Hooks"
-            </p>
-            <p>"React Tutorial and Projects Course (2022)"</p>
-          </div>
-          <div className="course">
-            <h2>FreeCodeCamp</h2>
-            <p>"Responsive Web Design Certification"</p>
-            <p>"JavaScript Algorithms and Data Structures Certification"</p>
-            <p>
-              "Frontend Development Libraries Certification (sass, redux and
-              react)"
-            </p>
+          <div className="course--grid">
+            <div className="course">
+              <h2>&lt; FreeCodeCamp /&gt;</h2>
+              <h3>// by Quincy Larson</h3>
+              <ul>
+                <li>"Responsive Web Design Certification"</li>
+                <li>
+                  "JavaScript Algorithms and Data Structures Certification"
+                </li>
+                <li>
+                  "Frontend Development Libraries Certification (sass, redux and
+                  react)"
+                </li>
+              </ul>
+            </div>
+            <div className="course">
+              <h2>&lt; Udemy /&gt;</h2>
+              <h3>// by Jonas Schmedtmann</h3>
+              <ul>
+                <li>
+                  "Build Responsive Real-World Websites with HTML and CSS"
+                </li>
+                <li>
+                  "Advanced CSS and Sass: Flexbox, Grid, Animations and More!"
+                </li>
+                <li>
+                  "The Complete JavaScript Course 2023: From Zero to Expert!"
+                </li>
+              </ul>
+            </div>
+            <div className="course">
+              <h2>&lt; CodeWithMosh /&gt;</h2>
+              <h3>// by Mosh Hamedani</h3>
+              <ul>
+                <li>"The Ultimate HTML5 & CSS3 Series"</li>
+                <li>"The Ultimate JavaScript Series"</li>
+                <li>"Mastering React"</li>
+                <li>"The Ultimate Git Course"</li>
+                <li>"The Ultimate TypeScript Course"</li>
+                <li>"The Ultimate Redux Course"</li>
+              </ul>
+            </div>
+            <div className="course">
+              <h2>&lt; CodingAddict /&gt;</h2>
+              <h3>// by John Smilga</h3>
+              <ul>
+                <li>
+                  "Full React Course 2020 - Learn Fundamentals, Hooks, Context
+                  API, React Router, Custom Hooks"
+                </li>
+                <li>"React Tutorial and Projects Course (2022)"</li>
+              </ul>
+            </div>
+            <div className="course">
+              <h2>&lt; WebDevSimplified /&gt;</h2>
+              <h3>// by Kile Cook</h3>
+              <ul>
+                <li>"React Hooks Simplified"</li>
+              </ul>
+            </div>
           </div>
         </div>
       )}
@@ -121,7 +148,7 @@ function Skills() {
             </figure>
             <figure>
               <img className="skill__logo" src={reactLogo} alt="react logo" />
-              <h4>React</h4>
+              <h4>Reactjs</h4>
             </figure>
             <figure>
               <img className="skill__logo" src={tsLogo} alt="typescript logo" />
@@ -216,16 +243,16 @@ function Skills() {
           <div className="experience--content">
             <div>
               <h3 className="color--6">// 2022 (current)</h3>
-              <p>Frontend Developer @ Faneca inc</p>
+              <p>Front-end Developer @ Faneca inc</p>
               <p>Freelancer </p>
             </div>
             <div>
-              <h3 className="color--6">// 2016 - 2022 (7years)</h3>
+              <h3 className="color--6">// 2016 - 2022 (7 years)</h3>
               <p>Senior Engineer @ AAP</p>
               <p>MEP Department Coordinator</p>
             </div>
             <div>
-              <h3 className="color--6">// 2015 (3months)</h3>
+              <h3 className="color--6">// 2015 (3 months)</h3>
               <p>Curricular Internship @ CMPF</p>
               <p>Civil Engineer Intern</p>
             </div>

@@ -103,8 +103,8 @@
   top: 16%;
   right: 0%;
   background-color: var(--color-secondary);
-  height: 84%;
-  width: 97vw;
+  height: 85%;
+  width: 90vw;
   border-top-left-radius: 25px;
   z-index: 2;
   padding: 4rem 6rem;
@@ -112,31 +112,42 @@
 
   &--button {
     position: fixed;
-    bottom: 0%;
-    right: -4.5%;
+    bottom: 5%;
+    right: -3.5%;
     transform: rotate(-90deg);
-    padding: 10px 20px;
-    height: 50px;
+    padding: 15px 30px;
+    height: 60px;
     border-top-right-radius: 15px;
     background-color: var(--color-secondary);
     color: white;
     font-size: 2rem;
+    letter-spacing: 0.2rem;
   }
+}
+
+.course--grid {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .course {
   & > h2 {
-    font-size: 2.5rem;
+    letter-spacing: 0.5px;
     margin-bottom: 0.5rem;
-    margin-top: 3rem;
+    font-size: 2.5rem;
   }
   & > h3 {
-    margin-bottom: 1rem;
-    color: #ccc;
+    margin-bottom: 2rem;
+    color: #aaa;
   }
-  & > p {
-    font-size: 1.6rem;
-    margin-bottom: 0.7rem;
+  & > ul {
+    padding-left: 1.8rem;
+    & > li {
+      width: 70ch;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
