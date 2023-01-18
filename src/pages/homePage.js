@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import QR from "../assets/images/cv_qr.png";
 import {
   FaLinkedin,
   FaGithub,
@@ -49,7 +50,11 @@ function Home() {
     <div className="container">
       <div className="sidebar">
         <div className="sidebar--btn">
-          <a href="" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/17wy2-8JjxLAvVG3lJdz1EnI83icA2W8n/view"
+            download="CV_SergioCosta"
+          >
+            {" "}
             CV
           </a>
         </div>
@@ -290,7 +295,9 @@ function Home() {
           <p className="text5">TEAMPLAYER</p>
           <p className="text6">CREATIVE</p>
           <p className="text7">AGILE</p>
-          <p className="qr">QR</p>
+          <p className="qr">
+            <img className="qr" src={QR} alt="cv qr code" fil />
+          </p>
           <p className="date">updated: jan 2023</p>
         </div>
       </section>

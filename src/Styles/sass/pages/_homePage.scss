@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 .container {
   position: relative;
   cursor: none;
@@ -103,19 +105,14 @@ svg {
   margin: -1% 0;
 }
 
-.cursor--element + .footer--grid:hover {
-  width: 200px;
-  height: 200px;
-  box-shadow: 0 0 10px 1px white;
-  animation: scale 5s infinite;
-  background: white;
-}
 .footer--grid {
   height: 100vh;
   color: #333;
   font-size: 3.5rem;
   padding: 3rem;
+  font-family: "Permanent Marker", cursive;
   font-weight: bold;
+  letter-spacing: 2px;
   mix-blend-mode: darken;
   display: grid;
   align-items: center;
@@ -136,25 +133,31 @@ svg {
 }
 .text2 {
   grid-area: b;
+  transform: rotate(35deg);
 }
 .text3 {
   grid-area: c;
+  transform: rotate(-15deg);
 }
 .text4 {
   grid-area: d;
 }
 .text5 {
   grid-area: e;
+  transform: rotate(-15deg);
 }
 .text6 {
   grid-area: f;
+  transform: rotate(35deg);
 }
 .text7 {
   grid-area: g;
+  transform: rotate(-80deg);
 }
 .qr {
   grid-area: qr;
 }
+
 .date {
   grid-area: date;
   font-size: 2rem;
@@ -170,8 +173,8 @@ svg {
   border-radius: 50%;
 
   &.lantern {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     box-shadow: 0 0 10px 1px white;
     animation: scale 5s infinite;
     background: white;
@@ -303,14 +306,13 @@ svg {
       }
     }
   }
+
   .footer--grid {
     padding: 3rem;
     color: var(--color-terciary);
     mix-blend-mode: normal;
   }
-  .qr {
-    color: var(--text-primary);
-  }
+
   .date {
     color: var(--text-primary);
   }

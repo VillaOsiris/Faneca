@@ -32,7 +32,7 @@ function Work() {
           <div className="project__highlights">
             <h3>Project Highlights</h3>
             <ul>
-              <li>Commerce Landing Page</li>
+              <li>Service Landing Page</li>
               <li>Creative Design</li>
               <li>React Router</li>
               <li>Sass</li>
@@ -84,7 +84,7 @@ function Work() {
           <div className="project__highlights">
             <h3>Project Highlights</h3>
             <ul>
-              <li>E-commerce</li>
+              <li>E-commerce Shop</li>
               <li>Context Hooks / Redux</li>
               <li>Data formating and Filtering</li>
               <li>Styled Components</li>
