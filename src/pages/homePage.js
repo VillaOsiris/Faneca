@@ -259,7 +259,7 @@ function Home() {
         </div>
         <h2 className="story--tag">&lt;/story&gt;</h2>
         <h2 className="placeholder--tag">
-          <p>"Don't stop me now!"</p>
+          <p>"Find More Below!"</p>
           <FaArrowDown />
         </h2>
       </section>
