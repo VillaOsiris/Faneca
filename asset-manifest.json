@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.d9753918.css",
-    "main.js": "/Portfolio/static/js/main.4d941dae.js",
+    "main.js": "/Portfolio/static/js/main.d79530c5.js",
     "static/media/moov_v1_clipped.png": "/Portfolio/static/media/moov_v1_clipped.68a803efd2f7b4db09f5.png",
     "static/media/hp_v4.png": "/Portfolio/static/media/hp_v4.c6ca76c495af479a17fd.png",
     "static/media/bgamer_v1.png": "/Portfolio/static/media/bgamer_v1.bd12b4deb8b990d59870.png",
     "static/media/me.jpg": "/Portfolio/static/media/me.577aafe4705d49d80baa.jpg",
     "static/media/pt.png": "/Portfolio/static/media/pt.dcc4d769fb2a4e37cc12.png",
-    "static/media/br.png": "/Portfolio/static/media/br.d0cb2f66a6be70a1b860.png",
     "static/media/es.png": "/Portfolio/static/media/es.a1576028f68738c382fe.png",
     "static/media/usa.png": "/Portfolio/static/media/usa.092d8b03f9457960fbcb.png",
     "static/media/fr.png": "/Portfolio/static/media/fr.eee4158b8a029c6de44e.png",
@@ -31,10 +30,10 @@
     "static/media/html.svg": "/Portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/office.svg": "/Portfolio/static/media/office.385bf055f6660f5b1f0279b3321ee9fe.svg",
     "main.d9753918.css.map": "/Portfolio/static/css/main.d9753918.css.map",
-    "main.4d941dae.js.map": "/Portfolio/static/js/main.4d941dae.js.map"
+    "main.d79530c5.js.map": "/Portfolio/static/js/main.d79530c5.js.map"
   },
   "entrypoints": [
     "static/css/main.d9753918.css",
-    "static/js/main.4d941dae.js"
+    "static/js/main.d79530c5.js"
   ]
 }
