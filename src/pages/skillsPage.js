@@ -34,7 +34,10 @@ function Skills() {
         from
         <span className="color--4"> "/me/dev.js"</span>
         <button className="cv__btn">
-          <a href="https://drive.google.com/file/d/17wy2-8JjxLAvVG3lJdz1EnI83icA2W8n/view">
+          <a
+            href="https://drive.google.com/uc?export=download&id=17wy2-8JjxLAvVG3lJdz1EnI83icA2W8n"
+            download
+          >
             CV <BiDownload className="cv__btn--icon" />
           </a>
         </button>

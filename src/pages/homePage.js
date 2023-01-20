@@ -52,7 +52,8 @@ function Home() {
         <div className="sidebar--btn">
           <a
             href="https://drive.google.com/file/d/17wy2-8JjxLAvVG3lJdz1EnI83icA2W8n/view"
-            download="CV_SergioCosta"
+            target="_blank"
+            rel="noreferrer"
           >
             {" "}
             CV
