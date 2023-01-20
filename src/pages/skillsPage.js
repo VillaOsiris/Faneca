@@ -18,7 +18,6 @@ import sassLogo from "../assets/logos/sass.svg";
 import tsLogo from "../assets/logos/typescript.svg";
 import vsLogo from "../assets/logos/vs_code.svg";
 import photoshopLogo from "../assets/logos/photoshop.svg";
-import BRflag from "../assets/lang/br.png";
 import ENflag from "../assets/lang/usa.png";
 import ESflag from "../assets/lang/es.png";
 import FRflag from "../assets/lang/fr.png";

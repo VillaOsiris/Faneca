@@ -59,17 +59,29 @@ function Home() {
           </a>
         </div>
         <div className="sidebar--btn">
-          <a href="https://www.linkedin.com/in/sergiocscosta/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/sergiocscosta/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin />
           </a>
         </div>
         <div className="sidebar--btn">
-          <a href="https://github.com/VillaOsiris" target="_blank">
+          <a
+            href="https://github.com/VillaOsiris"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub />
           </a>
         </div>
         <div className="sidebar--btn">
-          <a href="https://codepen.io/VillaOsiris" target="_blank">
+          <a
+            href="https://codepen.io/VillaOsiris"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaCodepen />
           </a>
         </div>
