@@ -75,7 +75,7 @@
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -83,15 +83,19 @@
     & > div {
       width: 60%;
       height: 25%;
-      border-top: 2px solid #ccc;
+      border-bottom: 2px solid #ccc;
       display: flex;
       justify-content: center;
       align-items: center;
 
+      &:last-child {
+        border: none;
+      }
+
       & > a {
         text-decoration: none;
         color: var(--text-primary);
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         position: relative;
         transition: all 2sec;
 

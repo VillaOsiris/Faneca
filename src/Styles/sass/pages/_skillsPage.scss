@@ -166,10 +166,85 @@
 }
 
 @media (max-width: 480px) {
+  .skills__grid {
+    &--icons {
+      grid-template-columns: repeat(2, 140px);
+    }
+  }
+
+  .languages--content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .experience--content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .interests {
+    margin-bottom: 5vh;
+    &--content {
+      display: grid;
+      width: 90%;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .interest__icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .courses__modal {
+    position: absolute;
+    top: 18%;
+    right: 0%;
+    height: 200%;
+    width: 100vw;
+    border-top-left-radius: 25px;
+    z-index: 2;
+    padding: 4rem 4rem;
+    animation: slideInRight 3s;
+
+    &--button {
+      bottom: 20%;
+      right: -3%;
+      transform: rotate(-90deg);
+      padding: 15px 15px;
+      height: 40px;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+  }
+
+  .course--grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .course {
+    & > h2 {
+      font-size: 2rem;
+    }
+    & > h3 {
+      margin-bottom: 1.5rem;
+    }
+
+    & > ul {
+      & > li {
+        width: 40ch;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
   .cv__btn {
     margin-left: 0.5rem;
 
-    transform: scale(0.7);
+    transform: scale(0.6);
   }
   .skills {
     &__grid {
