@@ -872,25 +872,37 @@ svg {
   width: 40px;
 }
 
-.cv__btn {
+.cv__btn,
+.map__btn {
   background: var(--color-secondary);
   padding: 6px 14px;
   border-radius: 25px;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   transition: all 0.25s;
 }
-.cv__btn > a {
+.cv__btn > a,
+.map__btn > a {
   color: var(--text-primary);
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
 }
-.cv__btn--icon {
+.cv__btn--icon,
+.map__btn--icon {
   width: 1.7rem;
   height: 1.7rem;
 }
-.cv__btn:hover {
+.cv__btn:hover,
+.map__btn:hover {
   scale: 1.1;
+}
+
+.map__btn {
+  background: var(--text-fifth);
+  margin-left: 0.5rem;
+}
+.map__btn > a {
+  font-size: 1.4rem;
 }
 
 .courses__modal {

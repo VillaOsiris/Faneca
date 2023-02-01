@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import QR from "../assets/images/cv_qr.png";
+import QR from "../assets/images/map_qr.png";
 import {
   FaLinkedin,
   FaGithub,
@@ -272,7 +272,7 @@ function Home() {
         </div>
         <h2 className="story--tag">&lt;/story&gt;</h2>
         <h2 className="placeholder--tag">
-          <p>"Find More Below!"</p>
+          <p>"Find My Roadmap!"</p>
           <FaArrowDown />
         </h2>
       </section>

@@ -74,11 +74,12 @@
   width: 40px;
 }
 
-.cv__btn {
+.cv__btn,
+.map__btn {
   background: var(--color-secondary);
   padding: 6px 14px;
   border-radius: 25px;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   transition: all 0.25s;
 
   & > a {
@@ -95,6 +96,14 @@
 
   &:hover {
     scale: 1.1;
+  }
+}
+
+.map__btn {
+  background: var(--text-fifth);
+  margin-left: 0.5rem;
+  & > a {
+    font-size: 1.4rem;
   }
 }
 
