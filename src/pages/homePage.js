@@ -1,15 +1,9 @@
 import { useState, useEffect } from "react";
 import QR from "../assets/images/map_qr.png";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaWhatsapp,
-  FaCodepen,
-  FaArrowDown,
-} from "react-icons/fa";
+import SideBar from "../Components/Sidebar";
+import { FaArrowDown } from "react-icons/fa";
 
 function Home() {
-  const [showModal, setShowModal] = useState(false);
   const [lantern, setLantern] = useState(false);
 
   // STORY PAGE EVENT
@@ -48,56 +42,7 @@ function Home() {
 
   return (
     <div className="container">
-      <div className="sidebar">
-        <div className="sidebar--btn">
-          <a
-            href="https://drive.google.com/file/d/17wy2-8JjxLAvVG3lJdz1EnI83icA2W8n/view"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            CV
-          </a>
-        </div>
-        <div className="sidebar--btn">
-          <a
-            href="https://www.linkedin.com/in/sergiocscosta/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-        </div>
-        <div className="sidebar--btn">
-          <a
-            href="https://github.com/VillaOsiris"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithub />
-          </a>
-        </div>
-        <div className="sidebar--btn">
-          <a
-            href="https://codepen.io/VillaOsiris"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaCodepen />
-          </a>
-        </div>
-        <div className="sidebar--btn">
-          <a onClick={() => setShowModal(!showModal)}>
-            <FaWhatsapp />
-          </a>
-        </div>
-        {showModal && (
-          <div className="contact__modal">
-            <p>(+34) 612 225 757</p>
-            <p>sergio20128@hotmail.com</p>
-          </div>
-        )}
-      </div>
+      <SideBar />
       <section className="page intro">
         <div className="intro__content">
           <h2 className="intro__title">
@@ -309,7 +254,7 @@ function Home() {
           <p className="text6">CREATIVE</p>
           <p className="text7">AGILE</p>
           <p className="qr">
-            <img className="qr" src={QR} alt="cv qr code" fil />
+            <img className="qr" src={QR} alt="cv qr code" />
           </p>
           <p className="date">updated: jan 2023</p>
         </div>

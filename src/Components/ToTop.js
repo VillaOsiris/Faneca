@@ -1,7 +1,6 @@
-import React from "react";
 import { FaArrowUp } from "react-icons/fa";
 
-function ToTopButton() {
+function ToTop() {
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function () {
     scrollFunction();
@@ -30,4 +29,4 @@ function ToTopButton() {
   );
 }
 
-export default ToTopButton;
+export default ToTop;
