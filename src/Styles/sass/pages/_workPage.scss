@@ -1,27 +1,76 @@
 .work {
+  width: 100%;
   display: flex;
   margin-left: -7vw;
-
-  & > div {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .project__container {
-  height: 500px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  margin-left: 7vw;
+  display: grid;
   gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+
+  & > div {
+    height: 400px;
+    box-shadow: 0 0 1px 1px white;
+    border-radius: 25px;
+    background-color: #999;
+    display: flex;
+    align-items: center;
+
+    & > article {
+      padding: 2rem;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .stack {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+
+    & > div {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+
+      & > img {
+        border-radius: 10%;
+        border: 3px solid black;
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+
+    & > a {
+      height: 3rem;
+      text-decoration: none;
+      font-weight: 900;
+      color: white;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &--link {
+      height: 3rem;
+      width: 3rem;
+      color: white;
+    }
+  }
 }
 
 .project {
   height: 200px;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 25px;
   border: 0.5px white solid;
   box-shadow: 0 0 10px 0 lightgray;
   background-color: var(--color-secondary);
@@ -33,8 +82,8 @@
   animation: openUp 3s;
 
   &:hover {
-    height: 400px;
-    width: 400px;
+    height: 375px;
+    width: 250px;
     box-shadow: 0 0 34px 0 lightgray;
   }
 

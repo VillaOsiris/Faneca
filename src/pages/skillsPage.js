@@ -89,6 +89,18 @@ function Skills() {
               </ul>
             </div>
             <div className="course">
+              <h2>&lt; IN-Learning /&gt;</h2>
+              <h3>// by LinkdIN</h3>
+              <ul>
+                <li>"Path: Full-Stack Web Developer"</li>
+                <li>"Python Essential Training"</li>
+                <li>"Performance Testing Fundations"</li>
+                <li>"Emerging Web Frameworks"</li>
+                <li>"End-to-End JavaScript Testing with Cypress.io"</li>
+                <li>and a lot more others...</li>
+              </ul>
+            </div>
+            <div className="course">
               <h2>&lt; CodingAddict /&gt;</h2>
               <h3>// by John Smilga</h3>
               <ul>
@@ -111,7 +123,7 @@ function Skills() {
       )}
       <div className="page--content skills">
         <section className="skills__grid">
-          <h3 className="skills__grid--title">Skills:</h3>
+          <h3 className="skills__grid--title">Tech Stack:</h3>
           <div className="skills__grid--icons">
             <figure>
               <img
@@ -121,10 +133,12 @@ function Skills() {
               />
               <h4>HTML</h4>
             </figure>
+
             <figure>
               <img className="skill__logo" src={logos.cssLogo} alt="css logo" />
               <h4>CSS</h4>
             </figure>
+
             <figure>
               <img
                 className="skill__logo"
@@ -133,14 +147,12 @@ function Skills() {
               />
               <h4>Javascript</h4>
             </figure>
+
             <figure>
-              <img
-                className="skill__logo"
-                src={logos.sassLogo}
-                alt="sass logo"
-              />
-              <h4>Sass</h4>
+              <img className="skill__logo" src={logos.tsLogo} alt="sass logo" />
+              <h4>Typescript</h4>
             </figure>
+
             <figure>
               <img
                 className="skill__logo"
@@ -149,22 +161,52 @@ function Skills() {
               />
               <h4>Bootstrap</h4>
             </figure>
+
+            <figure>
+              <img
+                className="skill__logo"
+                src={logos.sassLogo}
+                alt="react logo"
+              />
+              <h4>Sass</h4>
+            </figure>
+
+            <figure>
+              <img
+                className="skill__logo"
+                src={logos.tailwindLogo}
+                alt="typescript logo"
+              />
+              <h4>Tailwind</h4>
+            </figure>
+
+            <figure>
+              <img
+                className="skill__logo"
+                src={logos.styledLogo}
+                alt="typescript logo"
+              />
+              <h4>Styled-Comp</h4>
+            </figure>
+
             <figure>
               <img
                 className="skill__logo"
                 src={logos.reactLogo}
-                alt="react logo"
+                alt="typescript logo"
               />
               <h4>Reactjs</h4>
             </figure>
+
             <figure>
               <img
                 className="skill__logo"
-                src={logos.tsLogo}
-                alt="typescript logo"
+                src={logos.nextLogo}
+                alt="nodejs logo"
               />
-              <h4>Typescript</h4>
+              <h4>Nextjs</h4>
             </figure>
+
             <figure>
               <img
                 className="skill__logo"
@@ -173,64 +215,50 @@ function Skills() {
               />
               <h4>Nodejs</h4>
             </figure>
-          </div>
-          <h3 className="skills__grid--title">Tools:</h3>
-          <div className="skills__grid--icons">
+
             <figure>
               <img
                 className="skill__logo"
-                src={logos.vsLogo}
-                alt="visual studia code logo"
+                src={logos.mongoLogo}
+                alt="nodejs logo"
               />
-              <h4>VScode</h4>
+              <h4>MongoDB</h4>
             </figure>
+
             <figure>
-              <img className="skill__logo" src={logos.gitLogo} alt="git logo" />
-              <h4>Git</h4>
+              <img
+                className="skill__logo"
+                src={logos.jestLogo}
+                alt="nodejs logo"
+              />
+              <h4>Jestjs</h4>
             </figure>
+
+            <figure>
+              <img
+                className="skill__logo"
+                src={logos.webpackLogo}
+                alt="nodejs logo"
+              />
+              <h4>webpack</h4>
+            </figure>
+
             <figure>
               <img
                 className="skill__logo"
                 src={logos.dockerLogo}
-                alt="docker logo"
+                alt="nodejs logo"
               />
               <h4>Docker</h4>
             </figure>
+
             <figure>
               <img
                 className="skill__logo"
-                src={logos.photoshopLogo}
-                alt="photoshop logo"
+                src={logos.gitLogo}
+                alt="nodejs logo"
               />
-              <h4>Photoshop</h4>
-            </figure>
-            <figure>
-              <img
-                className="skill__logo"
-                src={logos.AdobeLogo}
-                alt="adobe logo"
-              />
-              <h4>Adobe</h4>
-            </figure>
-            <figure>
-              <img
-                className="skill__logo"
-                src={logos.officeLogo}
-                alt="office logo"
-              />
-              <h4>Office</h4>
-            </figure>
-            <figure>
-              <img
-                className="skill__logo"
-                src={logos.figmaLogo}
-                alt="figma logo"
-              />
-              <h4>Figma</h4>
-            </figure>
-            <figure>
-              <img className="skill__logo" src={logos.npmLogo} alt="npm logo" />
-              <h4>npm</h4>
+              <h4>Git</h4>
             </figure>
           </div>
         </section>
@@ -253,7 +281,7 @@ function Skills() {
               </figure>
             </div>
             <div className="languages--icon">
-              <h3 className="color--6">// OKish</h3>
+              <h3 className="color--6">// Professional</h3>
               <figure>
                 <img src={logos.ESflag} width="25px" alt="" />
                 <p>es-ES</p>

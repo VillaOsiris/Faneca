@@ -40,6 +40,14 @@ function Home() {
     });
   }, []);
 
+  // // ROTATING TEXT IMG
+  const text = "Frontend - Developer - React - ";
+  const newText = text.split("").map((char, i) => (
+    <p key={i} style={{ transform: `rotate(${i * 11.5}deg)` }}>
+      {char}
+    </p>
+  ));
+
   return (
     <div className="container">
       <SideBar />
@@ -55,17 +63,20 @@ function Home() {
             <span className="color--5">Front-end Developer</span>
           </h3>
           <p className="intro--1 color--6">
-            // Passioned for gaming, technology and digital arts. <br />
-            I'm driven by the curiosity to understand different levels of
-            software development, coding, newest features and cross-browser
-            testing.
+            // Making your dreams come true through my code.
+            <br /> Specialized in creating and maintaining pixel-perfect
+            applications to deliver the best user experience.
+            <br /> Let's talk about how I can help you achieve your goals!
           </p>
           <p className="intro--2">
             But wait... Are you ready for a story? This is how everything
             started...
           </p>
         </div>
-        <div className="intro--photo"></div>
+        <div className="intro--circle">
+          <div className="intro--photo"></div>
+          <div className="intro--text">{newText}</div>
+        </div>
       </section>
       <svg
         className="curve curve--intro"
