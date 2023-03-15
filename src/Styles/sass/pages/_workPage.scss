@@ -1,144 +1,14 @@
 .work {
   width: 100%;
   display: flex;
-  margin-left: -7vw;
-}
-
-.project__container {
-  margin-left: 7vw;
-  display: grid;
-  gap: 4rem;
-  grid-template-columns: 1fr 1fr;
-
-  & > div {
-    height: 400px;
-    box-shadow: 0 0 1px 1px white;
-    border-radius: 25px;
-    background-color: #999;
-    display: flex;
-    align-items: center;
-
-    & > article {
-      padding: 2rem;
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-
-      .stack {
-        display: flex;
-        gap: 1rem;
-      }
-    }
-
-    & > div {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-
-      & > img {
-        border-radius: 10%;
-        border: 3px solid black;
-      }
-    }
-  }
-
-  .icons {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1rem;
-
-    & > a {
-      height: 3rem;
-      text-decoration: none;
-      font-weight: 900;
-      color: white;
-      font-size: 2rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    &--link {
-      height: 3rem;
-      width: 3rem;
-      color: white;
-    }
-  }
-}
-
-.project {
-  height: 200px;
-  width: 200px;
-  border-radius: 25px;
-  border: 0.5px white solid;
-  box-shadow: 0 0 10px 0 lightgray;
-  background-color: var(--color-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition: all 1.2s;
-  animation: openUp 3s;
-
-  &:hover {
-    height: 375px;
-    width: 250px;
-    box-shadow: 0 0 34px 0 lightgray;
-  }
-
-  &__title {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-
-  &__logo {
-    animation: fadeIn 4s;
-  }
-  &__highlights {
-    align-self: center;
-    color: #aaa;
-    & > h3 {
-      margin-bottom: 1rem;
-    }
-    & > ul {
-      padding-left: 1.5rem;
-      line-height: 1.2;
-    }
-  }
-}
-
-.proj--1 {
-  background: url(/public/assets/images/hp_v4.png);
-}
-.proj--2 {
-  background: url(/public/assets/images/moov_v1_clipped.png);
-}
-.proj--3 {
-  background: url(/public/assets/images/bgamer_v1.png);
-}
-.proj--1,
-.proj--2,
-.proj--3 {
-  height: 350px;
-  width: 350px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 5vh 0 0 3vw;
+  gap: 15rem;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
   .work {
     flex-direction: column;
-  }
-  .project__container {
-    height: 350px;
-    width: 350px;
-    gap: 1rem;
-  }
-  .project:hover {
-    height: 300px;
-    width: 300px;
   }
 }
 

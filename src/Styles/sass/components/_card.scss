@@ -1,0 +1,92 @@
+.card {
+  &--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+    width: 275px;
+    height: 400px;
+  }
+  &--content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2.5rem;
+    background: #fff;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 0 0 40px 5px #b5e0f1;
+
+    &:hover .card--cover {
+      height: 275px;
+      border-radius: 100%;
+      scale: 50%;
+      transform: translateY(-225px);
+    }
+
+    &__title {
+      color: orangered;
+      font-weight: bold;
+      font-size: 2.2rem;
+      padding-top: 6rem;
+    }
+    &__subtitle {
+      color: gray;
+      font-weight: bold;
+      font-size: 1.8rem;
+      width: 40%;
+      text-align: center;
+      border-bottom: solid 3px gray;
+      padding-bottom: 0.2rem;
+    }
+    &__text {
+      color: #000;
+      font-weight: bold;
+      height: 150px;
+      line-height: 2rem;
+    }
+    &__buttons {
+      display: flex;
+      gap: 2rem;
+      margin-top: 0.5rem;
+    }
+    &__btn {
+      width: 100px;
+      border-radius: 20px;
+      background: orangered;
+      padding: 0.7rem 1rem;
+      color: #fff;
+      font-size: 2rem;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &--cover {
+    transform-origin: top;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 20px;
+    position: absolute;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  &--footer {
+    background: var(--color-secondary);
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: orangered;
+    font-weight: bolder;
+  }
+}
