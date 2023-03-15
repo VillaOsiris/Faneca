@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.65e1cd35.css",
-    "main.js": "/Portfolio/static/js/main.84f1b116.js",
-    "static/media/moov_v1_clipped.png": "/Portfolio/static/media/moov_v1_clipped.68a803efd2f7b4db09f5.png",
-    "static/media/hp_v4.png": "/Portfolio/static/media/hp_v4.c6ca76c495af479a17fd.png",
-    "static/media/bgamer_v1.png": "/Portfolio/static/media/bgamer_v1.bd12b4deb8b990d59870.png",
+    "main.css": "/Portfolio/static/css/main.10fb9c5b.css",
+    "main.js": "/Portfolio/static/js/main.57d722bc.js",
+    "static/media/moov_bg.png": "/Portfolio/static/media/moov_bg.fa7b477672bfee780bd2.png",
+    "static/media/bgamer_bg.png": "/Portfolio/static/media/bgamer_bg.c336f7fb2ee9d81e93d9.png",
+    "static/media/hp_bg.png": "/Portfolio/static/media/hp_bg.d29066c1c3aee018caa8.png",
     "static/media/me.jpg": "/Portfolio/static/media/me.577aafe4705d49d80baa.jpg",
     "static/media/pt.png": "/Portfolio/static/media/pt.dcc4d769fb2a4e37cc12.png",
     "static/media/es.png": "/Portfolio/static/media/es.a1576028f68738c382fe.png",
     "static/media/usa.png": "/Portfolio/static/media/usa.092d8b03f9457960fbcb.png",
+    "static/media/BabyLogo.png": "/Portfolio/static/media/BabyLogo.6497160f244a418b92b5.png",
     "static/media/styled.png": "/Portfolio/static/media/styled.fedb29267dd012426021.png",
     "static/media/fr.png": "/Portfolio/static/media/fr.eee4158b8a029c6de44e.png",
     "static/media/HpLogo.png": "/Portfolio/static/media/HpLogo.4d72a9e66062751ed2f5.png",
@@ -35,11 +36,11 @@
     "static/media/html.svg": "/Portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/next.svg": "/Portfolio/static/media/next.c816fd48acbdf1011952419a36bafefc.svg",
     "static/media/office.svg": "/Portfolio/static/media/office.385bf055f6660f5b1f0279b3321ee9fe.svg",
-    "main.65e1cd35.css.map": "/Portfolio/static/css/main.65e1cd35.css.map",
-    "main.84f1b116.js.map": "/Portfolio/static/js/main.84f1b116.js.map"
+    "main.10fb9c5b.css.map": "/Portfolio/static/css/main.10fb9c5b.css.map",
+    "main.57d722bc.js.map": "/Portfolio/static/js/main.57d722bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.65e1cd35.css",
-    "static/js/main.84f1b116.js"
+    "static/css/main.10fb9c5b.css",
+    "static/js/main.57d722bc.js"
   ]
 }
