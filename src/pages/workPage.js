@@ -1,11 +1,13 @@
 import * as logos from "../assets/logos";
 import Card from "../Components/card";
-import hpImage from "../assets/images/hp_v4.png";
-import BgamerImage from "../assets/images/bgamer_v1.png";
-import MoovImage from "../assets/images/moov_v1_clipped.png";
+import hpImage from "../assets/images/hp_bg.png";
+import BgamerImage from "../assets/images/bgamer_bg.png";
+import MoovImage from "../assets/images/moov_bg.png";
 import HpLogo from "../assets/images/HpLogo.png";
+import BabyLogo from "../assets/images/BabyLogo.png";
 import BgamerLogo from "../assets/images/BgamerLogo.png";
 import MoovLogo from "../assets/images/MoovLogo.png";
+import PortLogo from "../assets/images/PortLogo.png";
 
 function Work() {
   return (
@@ -122,9 +124,9 @@ function Work() {
           projImage={
             <img src={null} alt="COMING SOON" width="100%" height="100%" />
           }
-          title={"Title"}
-          logo={""}
-          repository={"#"}
+          title={"MyPort"}
+          logo={PortLogo}
+          repository={"https://github.com/VillaOsiris/Ports"}
           liveCode={"#"}
           stack={
             <>
@@ -148,16 +150,18 @@ function Work() {
               />
             </>
           }
-          description={"COMING SOON!"}
+          description={
+            "Portfolio showcase individual's professional work. Simplistic interface with information such as the individual's projects, and contacts to potential employers or clients."
+          }
         />
 
         <Card
           projImage={
             <img src={null} alt="COMING SOON" width="100%" height="100%" />
           }
-          title={"Title"}
-          logo={""}
-          repository={"#"}
+          title={"BabyBox"}
+          logo={BabyLogo}
+          repository={"https://github.com/VillaOsiris/Babybox"}
           liveCode={"#"}
           stack={
             <>
@@ -181,7 +185,9 @@ function Work() {
               />
             </>
           }
-          description={"COMING SOON!"}
+          description={
+            "Project involves offering a subscription-based service for pregnant women, providing monthly gift boxes containing spa-related items to help them de-stress and feel pampered during their pregnancy."
+          }
         />
 
         <Card

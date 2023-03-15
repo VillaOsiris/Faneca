@@ -1062,7 +1062,7 @@ svg {
 .work {
   width: 100%;
   display: flex;
-  padding: 5vh 0 0 3vw;
+  padding: 5vh 0 10vh 3vw;
   gap: 15rem;
   flex-wrap: wrap;
 }
