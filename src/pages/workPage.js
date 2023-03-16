@@ -3,6 +3,9 @@ import Card from "../Components/card";
 import hpImage from "../assets/images/hp_bg.png";
 import BgamerImage from "../assets/images/bgamer_bg.png";
 import MoovImage from "../assets/images/moov_bg.png";
+import PortImage from "../assets/images/MyPort_bg.png";
+import BabyImage from "../assets/images/baby_bg.png";
+import soonImage from "../assets/images/soonImg.jpg";
 import HpLogo from "../assets/images/HpLogo.png";
 import BabyLogo from "../assets/images/BabyLogo.png";
 import BgamerLogo from "../assets/images/BgamerLogo.png";
@@ -28,20 +31,15 @@ function Work() {
           stack={
             <>
               <img
-                src={logos.htmlLogo}
+                src={logos.reactLogo}
                 alt="html logo"
                 width="20px"
                 height="20px"
               />
+              <span> </span>
               <img
-                src={logos.cssLogo}
+                src={logos.sassLogo}
                 alt="css logo"
-                width="20px"
-                height="20px"
-              />
-              <img
-                src={logos.jsLogo}
-                alt="js logo"
                 width="20px"
                 height="20px"
               />
@@ -63,20 +61,15 @@ function Work() {
           stack={
             <>
               <img
-                src={logos.htmlLogo}
+                src={logos.reactLogo}
                 alt="html logo"
                 width="20px"
                 height="20px"
               />
+              <span> </span>
               <img
-                src={logos.cssLogo}
+                src={logos.styledLogo}
                 alt="css logo"
-                width="20px"
-                height="20px"
-              />
-              <img
-                src={logos.jsLogo}
-                alt="js logo"
                 width="20px"
                 height="20px"
               />
@@ -96,20 +89,15 @@ function Work() {
           stack={
             <>
               <img
-                src={logos.htmlLogo}
+                src={logos.reactLogo}
                 alt="html logo"
                 width="20px"
                 height="20px"
               />
+              <span> </span>
               <img
                 src={logos.cssLogo}
                 alt="css logo"
-                width="20px"
-                height="20px"
-              />
-              <img
-                src={logos.jsLogo}
-                alt="js logo"
                 width="20px"
                 height="20px"
               />
@@ -122,7 +110,7 @@ function Work() {
 
         <Card
           projImage={
-            <img src={null} alt="COMING SOON" width="100%" height="100%" />
+            <img src={PortImage} alt="COMING SOON" width="100%" height="100%" />
           }
           title={"MyPort"}
           logo={PortLogo}
@@ -131,20 +119,15 @@ function Work() {
           stack={
             <>
               <img
-                src={logos.htmlLogo}
+                src={logos.reactLogo}
                 alt="html logo"
                 width="20px"
                 height="20px"
               />
+              <span> </span>
               <img
-                src={logos.cssLogo}
+                src={logos.styledLogo}
                 alt="css logo"
-                width="20px"
-                height="20px"
-              />
-              <img
-                src={logos.jsLogo}
-                alt="js logo"
                 width="20px"
                 height="20px"
               />
@@ -157,7 +140,7 @@ function Work() {
 
         <Card
           projImage={
-            <img src={null} alt="COMING SOON" width="100%" height="100%" />
+            <img src={BabyImage} alt="COMING SOON" width="100%" height="100%" />
           }
           title={"BabyBox"}
           logo={BabyLogo}
@@ -166,20 +149,22 @@ function Work() {
           stack={
             <>
               <img
-                src={logos.htmlLogo}
+                src={logos.reactLogo}
                 alt="html logo"
                 width="20px"
                 height="20px"
               />
+              <span> </span>
               <img
-                src={logos.cssLogo}
-                alt="css logo"
+                src={logos.tsLogo}
+                alt="html logo"
                 width="20px"
                 height="20px"
               />
+              <span> </span>
               <img
-                src={logos.jsLogo}
-                alt="js logo"
+                src={logos.tailwindLogo}
+                alt="css logo"
                 width="20px"
                 height="20px"
               />
@@ -192,9 +177,9 @@ function Work() {
 
         <Card
           projImage={
-            <img src={null} alt="COMING SOON" width="100%" height="100%" />
+            <img src={soonImage} alt="COMING SOON" width="100%" height="100%" />
           }
-          title={"Title"}
+          title={"Coming Soon!"}
           logo={""}
           repository={"#"}
           liveCode={"#"}
@@ -220,7 +205,15 @@ function Work() {
               />
             </>
           }
-          description={"COMING SOON!"}
+          description={
+            <p>
+              "Well, what if there is no description? There wasn't one today."
+              <br />
+              <span style={{ color: "lightgray" }}>
+                Phil Connors, Groundhog Day (1993)
+              </span>
+            </p>
+          }
         />
       </div>
     </div>

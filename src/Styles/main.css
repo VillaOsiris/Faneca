@@ -504,7 +504,6 @@ body {
   overflow: hidden;
 }
 .card--footer {
-  background: var(--color-secondary);
   height: 10%;
   display: flex;
   justify-content: center;
@@ -512,6 +511,7 @@ body {
   border-radius: 5px;
   color: orangered;
   font-weight: bolder;
+  margin-top: 2rem;
 }
 
 .container {
@@ -1063,7 +1063,7 @@ svg {
   width: 100%;
   display: flex;
   padding: 5vh 0 10vh 3vw;
-  gap: 15rem;
+  gap: 10rem 15rem;
   flex-wrap: wrap;
 }
 

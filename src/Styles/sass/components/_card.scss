@@ -80,7 +80,6 @@
     overflow: hidden;
   }
   &--footer {
-    background: var(--color-secondary);
     height: 10%;
     display: flex;
     justify-content: center;
@@ -88,5 +87,6 @@
     border-radius: 5px;
     color: orangered;
     font-weight: bolder;
+    margin-top: 2rem;
   }
 }
