@@ -830,7 +830,7 @@ svg {
 .skills {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 8rem;
   padding-bottom: 5%;
 }
 .skills__flex {
@@ -862,13 +862,18 @@ svg {
   width: max-content;
 }
 
-.languages--content,
+.languages--content {
+  margin: 2rem 0 0 2rem;
+  display: flex;
+  gap: 12rem;
+}
+
 .experience--content,
 .interests--content {
   margin: 2rem 0 0 2rem;
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 75%;
 }
 
 .languages--content > div > h3 {

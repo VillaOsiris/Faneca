@@ -263,6 +263,40 @@ function Skills() {
           </div>
         </section>
 
+        <section className="experience">
+          <h3 className="experience--title">Work Experience:</h3>
+          <div className="experience--content">
+            <div>
+              <h3 className="color--6">// 2022 - 2023 (current)</h3>
+              <p>
+                <strong>React Developer</strong>
+              </p>
+              <p>Full-time Developer</p>
+            </div>
+            <div>
+              <h3 className="color--6">// 2021 - 2022 (&gt;1 year)</h3>
+              <p>
+                <strong>Front-end Developer</strong>
+              </p>
+              <p>Part-time Developer</p>
+            </div>
+            <div>
+              <h3 className="color--6">// 2016 - 2022 (&gt;7 years)</h3>
+              <p>
+                <strong>Senior Civil Engineer</strong> @ AAP
+              </p>
+              <p>MEP Department Coordinator</p>
+            </div>
+            <div>
+              <h3 className="color--6">// 2015 (3 months)</h3>
+              <p>
+                <strong>Civil Engineer Intern</strong> @ CMPF
+              </p>
+              <p>Curricular Internship</p>
+            </div>
+          </div>
+        </section>
+
         <section className="languages">
           <h3 className="languages--title">Languages:</h3>
           <div className="languages--content">
@@ -293,27 +327,6 @@ function Skills() {
                 <img src={logos.FRflag} width="25px" alt="" />
                 <p>fr-FR</p>
               </figure>
-            </div>
-          </div>
-        </section>
-
-        <section className="experience">
-          <h3 className="experience--title">Work Experience:</h3>
-          <div className="experience--content">
-            <div>
-              <h3 className="color--6">// 2022 (current)</h3>
-              <p>Front-end Developer @ Faneca inc</p>
-              <p>Freelancer </p>
-            </div>
-            <div>
-              <h3 className="color--6">// 2016 - 2022 (7 years)</h3>
-              <p>Senior Engineer @ AAP</p>
-              <p>MEP Department Coordinator</p>
-            </div>
-            <div>
-              <h3 className="color--6">// 2015 (3 months)</h3>
-              <p>Curricular Internship @ CMPF</p>
-              <p>Civil Engineer Intern</p>
             </div>
           </div>
         </section>

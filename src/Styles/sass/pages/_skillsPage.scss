@@ -1,7 +1,7 @@
 .skills {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 8rem;
   padding-bottom: 5%;
 
   &__flex {
@@ -34,14 +34,19 @@
   }
 }
 
-.languages,
+.languages--content {
+  margin: 2rem 0 0 2rem;
+  display: flex;
+  gap: 12rem;
+}
+
 .experience,
 .interests {
   &--content {
     margin: 2rem 0 0 2rem;
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 75%;
   }
 }
 
