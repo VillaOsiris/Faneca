@@ -41,6 +41,7 @@ function Card({
         <div className="card--footer">
           <img
             className="project__logo"
+            alt="logo of this project"
             src={logo}
             style={{ height: "4rem" }}
           />
