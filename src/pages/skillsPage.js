@@ -49,7 +49,7 @@ function Skills() {
           <div className="course--grid">
             <div className="course">
               <h2>&lt; FreeCodeCamp /&gt;</h2>
-              <h3>// by Quincy Larson</h3>
+              <h3>{"// by Quincy Larson"}</h3>
               <ul>
                 <li>"Responsive Web Design Certification"</li>
                 <li>
@@ -63,7 +63,7 @@ function Skills() {
             </div>
             <div className="course">
               <h2>&lt; Udemy /&gt;</h2>
-              <h3>// by Jonas Schmedtmann</h3>
+              <h3>{`// by Jonas Schmedtmann`}</h3>
               <ul>
                 <li>
                   "Build Responsive Real-World Websites with HTML and CSS"
@@ -78,7 +78,7 @@ function Skills() {
             </div>
             <div className="course">
               <h2>&lt; CodeWithMosh /&gt;</h2>
-              <h3>// by Mosh Hamedani</h3>
+              <h3>{`// by Mosh Hamedani`}</h3>
               <ul>
                 <li>"The Ultimate HTML5 & CSS3 Series"</li>
                 <li>"The Ultimate JavaScript Series"</li>
@@ -90,7 +90,7 @@ function Skills() {
             </div>
             <div className="course">
               <h2>&lt; IN-Learning /&gt;</h2>
-              <h3>// by LinkdIN</h3>
+              <h3>{`// by LinkdIN`}</h3>
               <ul>
                 <li>"Path: Full-Stack Web Developer"</li>
                 <li>"Python Essential Training"</li>
@@ -102,7 +102,7 @@ function Skills() {
             </div>
             <div className="course">
               <h2>&lt; CodingAddict /&gt;</h2>
-              <h3>// by John Smilga</h3>
+              <h3>{`// by John Smilga`}</h3>
               <ul>
                 <li>
                   "Full React Course 2020 - Learn Fundamentals, Hooks, Context
@@ -113,7 +113,7 @@ function Skills() {
             </div>
             <div className="course">
               <h2>&lt; WebDevSimplified /&gt;</h2>
-              <h3>// by Kile Cook</h3>
+              <h3>{`// by Kile Cook`}</h3>
               <ul>
                 <li>"React Hooks Simplified"</li>
               </ul>
@@ -267,28 +267,28 @@ function Skills() {
           <h3 className="experience--title">Work Experience:</h3>
           <div className="experience--content">
             <div>
-              <h3 className="color--6">// 2022 - 2023 (current)</h3>
+              <h3 className="color--6">{`// 2022 - 2023 (current)`}</h3>
               <p>
                 <strong>React Developer</strong>
               </p>
               <p>Full-time Developer</p>
             </div>
             <div>
-              <h3 className="color--6">// 2021 - 2022 (&gt;1 year)</h3>
+              <h3 className="color--6">{`// 2021 - 2022 (>1 year)`}</h3>
               <p>
                 <strong>Front-end Developer</strong>
               </p>
               <p>Part-time Developer</p>
             </div>
             <div>
-              <h3 className="color--6">// 2016 - 2022 (&gt;7 years)</h3>
+              <h3 className="color--6">{`// 2016 - 2022 (>7 years)`}</h3>
               <p>
                 <strong>Senior Civil Engineer</strong> @ AAP
               </p>
               <p>MEP Department Coordinator</p>
             </div>
             <div>
-              <h3 className="color--6">// 2015 (3 months)</h3>
+              <h3 className="color--6">{`// 2015 (3 months)`}</h3>
               <p>
                 <strong>Civil Engineer Intern</strong> @ CMPF
               </p>
@@ -301,28 +301,28 @@ function Skills() {
           <h3 className="languages--title">Languages:</h3>
           <div className="languages--content">
             <div className="languages--icon">
-              <h3 className="color--6">// Native</h3>
+              <h3 className="color--6">{`// Native`}</h3>
               <figure>
                 <img src={logos.PTflag} width="25px" alt="" />
                 <p>pt-PT</p>
               </figure>
             </div>
             <div className="languages--icon">
-              <h3 className="color--6">// Fluent</h3>
+              <h3 className="color--6">{`// Fluent`}</h3>
               <figure>
                 <img src={logos.ENflag} width="25px" alt="" />
                 <p>en-US</p>
               </figure>
             </div>
             <div className="languages--icon">
-              <h3 className="color--6">// Professional</h3>
+              <h3 className="color--6">{`// Professional`}</h3>
               <figure>
                 <img src={logos.ESflag} width="25px" alt="" />
                 <p>es-ES</p>
               </figure>
             </div>
             <div className="languages--icon">
-              <h3 className="color--6">// Poor</h3>
+              <h3 className="color--6">{`// Poor`}</h3>
               <figure>
                 <img src={logos.FRflag} width="25px" alt="" />
                 <p>fr-FR</p>

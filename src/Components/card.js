@@ -1,4 +1,3 @@
-import * as logos from "../assets/logos";
 import { BsGithub } from "react-icons/bs";
 import { MdOpenInNew } from "react-icons/md";
 
@@ -21,10 +20,20 @@ function Card({
           <div>{stack}</div>
           <p className="card--content__text mb-4">{description}</p>
           <div className="card--content__buttons">
-            <a className="card--content__btn" href={repository} target="_blank">
+            <a
+              className="card--content__btn"
+              href={repository}
+              target="_blank"
+              rel="noreferrer"
+            >
               CODE <BsGithub />
             </a>
-            <a className="card--content__btn" href={liveCode} target="_blank">
+            <a
+              className="card--content__btn"
+              href={liveCode}
+              target="_blank"
+              rel="noreferrer"
+            >
               LIVE <MdOpenInNew />
             </a>
           </div>

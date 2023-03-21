@@ -63,7 +63,7 @@ function Home() {
             <span className="color--5">Front-end Developer</span>
           </h3>
           <p className="intro--1 color--6">
-            // Making your dreams come true through my code.
+            {`// Making your dreams come true through my code.`}
             <br /> Specialized in creating and maintaining pixel-perfect
             applications to deliver the best user experience.
             <br /> Let's talk about how I can help you achieve your goals!
@@ -259,15 +259,15 @@ function Home() {
         >
           <p className="text1">Keep looking...</p>
           <p className="text2">REACT</p>
-          <p className="text3">MUCH FUN!</p>
-          <p className="text4">WOW!</p>
+          <p className="text3">FRONTEND</p>
+          <p className="text4">LEARNER</p>
           <p className="text5">TEAMPLAYER</p>
           <p className="text6">CREATIVE</p>
           <p className="text7">AGILE</p>
           <p className="qr">
             <img className="qr" src={QR} alt="cv qr code" />
           </p>
-          <p className="date">updated: jan 2023</p>
+          <p className="date">updated: mar 2023</p>
         </div>
       </section>
     </div>
