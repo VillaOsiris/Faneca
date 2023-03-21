@@ -115,7 +115,7 @@ function Work() {
           title={"MyPort"}
           logo={PortLogo}
           repository={"https://github.com/VillaOsiris/Ports"}
-          liveCode={"#"}
+          liveCode={"https://VillaOsiris.github.io/Ports"}
           stack={
             <>
               <img
@@ -145,7 +145,7 @@ function Work() {
           title={"BabyBox"}
           logo={BabyLogo}
           repository={"https://github.com/VillaOsiris/Babybox"}
-          liveCode={"#"}
+          liveCode={"https://VillaOsiris.github.io/Babybox"}
           stack={
             <>
               <img
